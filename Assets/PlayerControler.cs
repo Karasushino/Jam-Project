@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerControler : NetworkBehaviour
 {
     public Rigidbody2D RigidBody;
     public float movementSpeed = 5f;
     Vector2 movement;
+    public Animator animator;
 
 
     // Start is called before the first frame update
@@ -18,35 +20,38 @@ public class PlayerControler : NetworkBehaviour
 
     }
     // Update is called once per frame
-    [Client]
     void Update()
     {
         if (hasAuthority)
-            CmdMove();
+        {
+            //Gets movement 2DVector from player input.
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+
+            //Gives the movement directions to the blend tree to set animation in animator
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Magnitude", movement.magnitude);
+
+            //Remembers what face the player was looking at and sets idle animation
+            if (Mathf.Abs(movement.magnitude) >0)
+            {
+                animator.SetFloat("Last Horizontal", movement.x);
+                animator.SetFloat("Last Vertical", movement.y);
+            }
+
+
+        }
+
 
 
     }
 
     void FixedUpdate()
     {
-
+        //Moves the Rigid body
         RigidBody.MovePosition(RigidBody.position + movement * movementSpeed * Time.deltaTime);
 
     }
-    [Command]
-    private void CmdMove()
-    {
-        
-        RcpMove();
-
-    }
-    [ClientRpc]
-    private void RcpMove()
-    {
-        
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
-        
-        
-    }
+ 
 }
