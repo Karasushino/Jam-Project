@@ -34,7 +34,7 @@ public class PlayerControler : NetworkBehaviour
             animator.SetFloat("Magnitude", movement.magnitude);
 
             //Remembers what face the player was looking at and sets idle animation
-            if (Mathf.Abs(movement.magnitude) >0)
+            if (Mathf.Abs(movement.magnitude) > 0 )
             {
                 animator.SetFloat("Last Horizontal", movement.x);
                 animator.SetFloat("Last Vertical", movement.y);
