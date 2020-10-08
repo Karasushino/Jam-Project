@@ -1,3 +1,4 @@
+using System;
 using Mirror;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,17 +13,17 @@ public class PlayerControler : NetworkBehaviour
     public float movementSpeed = 5f;
     Vector2 movement;
     public Animator animator;
-
-
+    private bool bPlayerMovement;
+    
     // Start is called before the first frame update
     void Start()
     {
-
+        bPlayerMovement = true;
     }
     // Update is called once per frame
     void Update()
     {
-        if (hasAuthority)
+        if (hasAuthority && bPlayerMovement)
         {
             //Gets movement 2DVector from player input.
             movement.x = Input.GetAxisRaw("Horizontal");
@@ -53,5 +54,9 @@ public class PlayerControler : NetworkBehaviour
         RigidBody.MovePosition(RigidBody.position + movement * movementSpeed * Time.deltaTime);
 
     }
- 
+
+    public void EnableMovement(bool b)
+    {
+        bPlayerMovement = b;
+    }
 }
