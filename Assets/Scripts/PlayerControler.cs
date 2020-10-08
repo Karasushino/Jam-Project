@@ -54,9 +54,16 @@ public class PlayerControler : NetworkBehaviour
         RigidBody.MovePosition(RigidBody.position + movement * movementSpeed * Time.deltaTime);
 
     }
-
+    //Enable player movement input
     public void EnableMovement(bool b)
     {
         bPlayerMovement = b;
+        //Makes sure to not move player
+        movement.x = 0.0f;
+        movement.y = 0.0f;
+        //Syncs animations
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Magnitude", movement.magnitude);
     }
 }
