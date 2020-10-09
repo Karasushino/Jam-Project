@@ -11,17 +11,17 @@ public class BaseTask : MonoBehaviour
     //Flag true if the player is inside this object range
     private bool bPlayerIn;
     //Player Instance in This Object
-    private GameObject Player;
+    protected GameObject Player;
     //String With This Task Description
     public  String sDescription;
     //String For This Task Name
     private String sTaskName;
     //Flag is this Task is active or sleeping
-    private bool bIsActiveTask;
-    //Task if succed or failure in this task. 
-    private bool bSuccess;
+    protected bool bIsActiveTask;
+    //Task if succeed or failure in this task. 
+    protected bool bSuccess;
     //Count Errors in the Task
-    private int nErrors; 
+    protected int nErrors; 
     
     ////////////////////////////////// MAIN FUNCTIONS  //////////////////////////////////
     
@@ -125,9 +125,9 @@ public class BaseTask : MonoBehaviour
     {
         return sDescription;
     }
-    
+
     ////////////////////////////////// GENERAL FUNCTIONS //////////////////////////////////
-    
+
     // Give Back Movement to the player when the UI task is closed
     public void ReturnMovementToPlayerOnUI()
     {
@@ -135,6 +135,8 @@ public class BaseTask : MonoBehaviour
         {
             Player.GetComponent<PlayerControler>().EnableMovement(true);
         }
+        
+
     }
     
 }
