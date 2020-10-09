@@ -360,6 +360,7 @@
           <e p="BaseTask.cs" t="Include" />
           <e p="PlayerControler.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="TaskLog.cs" t="Include" />
         </e>
         <e p="UniversalPipeline" t="Include">
           <e p="TutorialInfo" t="Include">
