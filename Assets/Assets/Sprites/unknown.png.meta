@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 3c5a040d14d3c2e4bb5e7e1b2372c678
+guid: d69e03f0f32899a478672e6430ae043e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6323198320570251567
-    second: Character_Left_0
-  - first:
-      213: -3711657929978317982
-    second: Character_Left_1
-  - first:
-      213: 5275544761760977293
-    second: Character_Left_2
-  - first:
-      213: 7110928172755517189
-    second: Character_Left_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,13 +41,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 8, y: 3, z: 6, w: 3}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -137,95 +125,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Character_Left_0
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 6
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f29bfedee5380c750800000000000000
-      internalID: 6323198320570251567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Left_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 6
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26371e327ca8d7cc0800000000000000
-      internalID: -3711657929978317982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Left_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 6
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d819f618200863940800000000000000
-      internalID: 5275544761760977293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Left_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 6
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50ff8607f771fa260800000000000000
-      internalID: 7110928172755517189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 19778010f6b5e5d4e94fe6fc37565741
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
