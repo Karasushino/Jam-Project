@@ -133,10 +133,12 @@ public class BaseTask : MonoBehaviour
     {
         if (Player)
         {
+            //Debug
+            Debug.Log("ReturnMovementToPlayerOnUI() was called with a player");
             Player.GetComponent<PlayerControler>().EnableMovement(true);
         }
-        
 
+        Debug.Log("ReturnMovementToPlayerOnUI() was called with no player object");
     }
     
 }
