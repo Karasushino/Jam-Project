@@ -13,7 +13,7 @@ public class PlayerControler : NetworkBehaviour
     public float movementSpeed = 5f;
     Vector2 movement;
     public Animator animator;
-    private bool bPlayerMovement;
+    public bool bPlayerMovement;
     
     // Start is called before the first frame update
     void Start()

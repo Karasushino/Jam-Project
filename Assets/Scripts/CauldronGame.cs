@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror.Examples.Pong;
 using UnityEngine;
 using UnityEngine.UI;
 public class CauldronGame : BaseTask
@@ -29,8 +30,9 @@ public class CauldronGame : BaseTask
     
 
     // Update is called once per frame
-    void Update()
+  protected override void Update()
     {
+        base.Update();
         if (!bSuccess)
         {
             UpdateTemperatureBar();
@@ -40,7 +42,9 @@ public class CauldronGame : BaseTask
         {
             //Disable it
             EnableUITask(false);
-            ReturnMovementToPlayerOnUI();
+            
+            Player.GetComponent<PlayerControler>().EnableMovement(true);
+           // ReturnMovementToPlayerOnUI();
         }
 
     }

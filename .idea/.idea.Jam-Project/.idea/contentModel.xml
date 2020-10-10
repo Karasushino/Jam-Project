@@ -358,6 +358,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BaseTask.cs" t="Include" />
+          <e p="CauldronGame.cs" t="Include" />
           <e p="PlayerControler.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="TaskLog.cs" t="Include" />

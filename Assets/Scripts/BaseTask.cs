@@ -11,7 +11,7 @@ public class BaseTask : MonoBehaviour
     //Flag true if the player is inside this object range
     private bool bPlayerIn;
     //Player Instance in This Object
-    protected GameObject Player;
+    public GameObject Player;
     //String With This Task Description
     public  String sDescription;
     //String For This Task Name
@@ -40,7 +40,7 @@ public class BaseTask : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         //If the player is in Range of the Task...
         if (bPlayerIn)
@@ -48,6 +48,7 @@ public class BaseTask : MonoBehaviour
             //... and it pushes the "Fire1" button..
             if (Input.GetButtonDown("Fire1"))
             {
+                
                 //Enable the UI Task Minigame
                 EnableUITask(true);
                 //Restrict Player Movement while using the task.
@@ -131,14 +132,15 @@ public class BaseTask : MonoBehaviour
     // Give Back Movement to the player when the UI task is closed
     public void ReturnMovementToPlayerOnUI()
     {
-        if (Player)
-        {
+   
             //Debug
             Debug.Log("ReturnMovementToPlayerOnUI() was called with a player");
             Player.GetComponent<PlayerControler>().EnableMovement(true);
-        }
+  
+            //Debug.Log("ReturnMovementToPlayerOnUI() was called with no player object");
+        
 
-        Debug.Log("ReturnMovementToPlayerOnUI() was called with no player object");
+       
     }
     
 }
