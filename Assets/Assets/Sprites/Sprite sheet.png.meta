@@ -95,6 +95,9 @@ TextureImporter:
   - first:
       213: 718397956523252551
     second: Tilemap-export (1)_30
+  - first:
+      213: -8173353090802019188
+    second: Sprite sheet_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -446,6 +449,27 @@ TextureImporter:
       bones: []
       spriteID: 74b5fed922348f900800000000000000
       internalID: 718397956523252551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 400
+        width: 76
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8497ee0baa629e80800000000000000
+      internalID: -8173353090802019188
       vertices: []
       indices: 
       edges: []
