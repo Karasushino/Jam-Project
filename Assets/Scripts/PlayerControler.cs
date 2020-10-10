@@ -65,5 +65,8 @@ public class PlayerControler : NetworkBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
+
+        //Debug
+        Debug.Log("Enable Movement Function was called");
     }
 }
