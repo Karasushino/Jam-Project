@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 323148637
   m_SortingLayer: 4
   m_SortingOrder: 10
-  m_Sprite: {fileID: -8446969048012174944, guid: fd019634206d83d4a8c64eb4ccedf450, type: 3}
+  m_Sprite: {fileID: 2007131243931206709, guid: 3bc2011d118f8c74ea07ee347ae5eeff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   RigidBody: {fileID: 3623179386806071304}
-  movementSpeed: 5
+  movementSpeed: 6
   animator: {fileID: 1467542536894276827}
   bPlayerMovement: 0
 --- !u!114 &7195618909541972124
@@ -215,7 +215,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.2}
+    oldSize: {x: 0.3, y: 0.41}
     newSize: {x: 0.16, y: 0.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -237,6 +237,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.13, y: 0.2}
+  m_Offset: {x: -0.014, y: -0.04}
+  m_Size: {x: 0.27, y: 0.32}
   m_Direction: 0
