@@ -505,6 +505,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128148152}
   m_CullTransparentMesh: 1
+--- !u!1 &158309832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158309833}
+  m_Layer: 0
+  m_Name: -----------LEFTSIDE-------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &158309833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158309832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8050483, y: 0.869165, z: -0.2015363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189413775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
@@ -525,13 +555,14 @@ MonoBehaviour:
   UITask: {fileID: 1447961489}
   Player: {fileID: 0}
   sDescription: Cauldron Minigame P2
+  bSuccess: 0
   temperatureBar: {fileID: 559445293}
   temperatureText: {fileID: 1319371346}
   temperatureNeeded: 80
   currentTemperature: 40
-  tempToAddPerClick: 1
   maxTemperature: 160
-  CoolingRate: 1
+  CoolingRate: 2
+  currentCoolingRate: 2
 --- !u!95 &189413777
 Animator:
   serializedVersion: 3
@@ -584,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d047a6c42f0b0d9419c9034f026dbcbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BookMaterial: {fileID: 0}
+  BookMaterial: {fileID: 2100000, guid: c7a18ad7165f3964cbd8d272cdef7165, type: 2}
   originalColor: {r: 3867.75, g: 3705.75, b: 0, a: 1}
   startingIntensity: 4.5
   MinIntensity: 2
@@ -607,12 +638,12 @@ GameObject:
   - component: {fileID: 190798579}
   - component: {fileID: 190798582}
   m_Layer: 0
-  m_Name: BOOK1
+  m_Name: Left_BOOK1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &190798579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,7 +731,7 @@ Transform:
   - {fileID: 1836777190}
   - {fileID: 1364604808}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &190798582
 PolygonCollider2D:
@@ -776,6 +807,85 @@ Transform:
   m_Father: {fileID: 411995468}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &215669980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215669981}
+  - component: {fileID: 215669983}
+  - component: {fileID: 215669982}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &215669981
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215669980}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1086906984}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &215669982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215669980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Button
+--- !u!222 &215669983
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215669980}
+  m_CullTransparentMesh: 1
 --- !u!114 &276887578 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4382781309485900569, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
@@ -919,14 +1029,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UITask: {fileID: 2082358911}
   Player: {fileID: 0}
-  sDescription: The Cauldron Minigame
+  sDescription: 
+  bSuccess: 0
   temperatureBar: {fileID: 989305195}
   temperatureText: {fileID: 1796480998}
   temperatureNeeded: 80
   currentTemperature: 40
-  tempToAddPerClick: 5
   maxTemperature: 160
-  CoolingRate: 5
+  CoolingRate: 2
+  currentCoolingRate: 2
 --- !u!114 &399798231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d047a6c42f0b0d9419c9034f026dbcbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BookMaterial: {fileID: 0}
+  BookMaterial: {fileID: 2100000, guid: c7a18ad7165f3964cbd8d272cdef7165, type: 2}
   originalColor: {r: 3867.75, g: 3705.75, b: 0, a: 1}
   startingIntensity: 4.5
   MinIntensity: 2
@@ -3406,7 +3517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &471668060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3628,7 +3739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_Name
-      value: TaskManager
+      value: Left_TaskManager
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_IsActive
@@ -3664,11 +3775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.98
+      value: -7.11
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.82
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3692,7 +3803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3775,11 +3886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_Name
-      value: Cauldron 2 Task
+      value: Left_Cauldron Task
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189558, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: UITask
@@ -3891,7 +4002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4942,6 +5053,139 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1086906983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086906984}
+  - component: {fileID: 1086906987}
+  - component: {fileID: 1086906986}
+  - component: {fileID: 1086906985}
+  m_Layer: 5
+  m_Name: StabilizeTemperature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1086906984
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086906983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 215669981}
+  m_Father: {fileID: 2082358912}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 350.02, y: 136.198}
+  m_SizeDelta: {x: 242.53, y: 170.397}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1086906985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086906983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0.4464836, g: 1, b: 0.41037738, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1086906986}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 399798230}
+        m_TargetAssemblyTypeName: CauldronGame, Assembly-CSharp
+        m_MethodName: StopCooling
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1086906986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086906983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1086906987
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086906983}
+  m_CullTransparentMesh: 1
 --- !u!1 &1104754050
 GameObject:
   m_ObjectHideFlags: 0
@@ -4988,7 +5232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1151776304
 PrefabInstance:
@@ -5015,7 +5259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_Name
-      value: Octopus Task
+      value: Right_Octopus Task
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_IsActive
@@ -5119,7 +5363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7141,6 +7385,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThisBookTasks:
   - {fileID: 399798229}
+  - {fileID: 399798229}
+  - {fileID: 399798229}
+  - {fileID: 399798229}
   ArrayUITexts:
   - {fileID: 128148154}
 --- !u!1001 &1865142688
@@ -7200,7 +7447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_Name
-      value: Cauldron Minigame P2
+      value: Left_CouldronMinigame
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_IsActive
@@ -7385,7 +7632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d047a6c42f0b0d9419c9034f026dbcbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BookMaterial: {fileID: 0}
+  BookMaterial: {fileID: 2100000, guid: c7a18ad7165f3964cbd8d272cdef7165, type: 2}
   originalColor: {r: 859.5, g: 823.5, b: 0, a: 1}
   startingIntensity: 4.5
   MinIntensity: 2
@@ -7395,6 +7642,36 @@ MonoBehaviour:
   MinRadius: 0.87
   MaxRadius: 0.33
   startingRadius: 0.33
+--- !u!1 &1982792095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1982792096}
+  m_Layer: 0
+  m_Name: -----------RIGHTSIDE-------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1982792096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982792095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8050483, y: 0.869165, z: -0.2015363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020448193
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,7 +7834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_Name
-      value: Cauldron Task
+      value: 'Right_Cauldron Task '
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189557, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_IsActive
@@ -7677,7 +7954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189561, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7785,7 +8062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567532857823234208, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
       propertyPath: m_Name
-      value: Alchemy Task
+      value: Right_Alchemy Task
       objectReference: {fileID: 0}
     - target: {fileID: 6567532857823234220, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7817,7 +8094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6567532857823234220, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6567532857823234220, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7916,6 +8193,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 399798230}
+    - target: {fileID: 7605370327836779284, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
@@ -7934,7 +8215,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -67.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 77.266
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329071629088, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7942,7 +8239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_Name
-      value: Cauldron Minigame
+      value: Right_Cauldron Minigame
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_IsActive

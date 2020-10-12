@@ -20,6 +20,7 @@ public class BaseTask : MonoBehaviour
     //Flag is this Task is active or sleeping
     protected bool bIsActiveTask;
     //Task if succeed or failure in this task. 
+    [SerializeField]
     protected bool bSuccess;
     //Count Errors in the Task
     protected int nErrors; 
@@ -27,9 +28,9 @@ public class BaseTask : MonoBehaviour
     ////////////////////////////////// MAIN FUNCTIONS  //////////////////////////////////
     
     // Start is called before the first frame update
-    private void Awake()
+   protected virtual  void Awake()
     {
-        sDescription = "Step 1: Task #1";
+      //  sDescription = "Step 1: Task #1";
     }
 
     void Start()
@@ -92,6 +93,7 @@ public class BaseTask : MonoBehaviour
     public void EnableUITask(bool boolean)
     {
         UITask.gameObject.SetActive(boolean);
+        
     }
     
     //Set if the task is active or not

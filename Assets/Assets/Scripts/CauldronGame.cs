@@ -19,22 +19,27 @@ public class CauldronGame : BaseTask
     [SerializeField]
     //The temperature the Cauldron is at the start of the mini game
     private float currentTemperature = 40.0f;
-    [SerializeField]
+    //[SerializeField]
     //The temperature that we add every click
-    private float tempToAddPerClick = 1.0f;
+    private float tempToAddPerClick = 5.0f;
     [SerializeField]
     //The max temperature there can be while heating the cauldron.
     private float maxTemperature = 160.0f;
     //The rate temperature drops at.
     [SerializeField]
-    private float CoolingRate = 1.0f;
-
+    public float CoolingRate = 2.0f;
+    [SerializeField]
+    public float currentCoolingRate = 2.0f;
     //Private variables 
     //The percentage filled of the bar to show the player
     private float percentageOfTempBar = 0.0f;
 
 
-
+    protected override void Awake()
+    {
+        base.Awake();
+        sDescription = "Increment the cauldron temperature to " + temperatureNeeded + "º";
+    }
 
     // Update is called once per frame
     protected override void Update()
@@ -55,6 +60,8 @@ public class CauldronGame : BaseTask
         // ReturnMovementToPlayerOnUI();
         //  }
 
+        
+
     }
 
 
@@ -63,8 +70,8 @@ public class CauldronGame : BaseTask
     {
         if (currentTemperature > 0.0f)
         {
-            currentTemperature -= Time.deltaTime * CoolingRate;
-            Debug.Log("Current Temperature: " + currentTemperature.ToString());
+            currentTemperature -= Time.deltaTime * currentCoolingRate;
+            Debug.Log("Current Temperature: " + (Mathf.Round(currentTemperature)));
         }
         else
         {
@@ -75,6 +82,7 @@ public class CauldronGame : BaseTask
     //Function binded to button to increase temperature
     public void IncreaseCauldronTemperature()
     {
+        currentCoolingRate = CoolingRate;
         //Add to current temperature
         currentTemperature += tempToAddPerClick;
 
@@ -83,12 +91,17 @@ public class CauldronGame : BaseTask
             currentTemperature = maxTemperature;
     }
 
-    void CheckIfTemperatureIsCorrect()
+    bool CheckIfTemperatureIsCorrect()
     {
-        if (currentTemperature == temperatureNeeded)
+        if (Mathf.Round(currentTemperature) == temperatureNeeded)
         {
             bSuccess = true;
             Debug.Log("Task Cauldron Completed");
+            return true;
+        }
+        else
+        {
+            return false;
         }
             
     }
@@ -109,5 +122,15 @@ public class CauldronGame : BaseTask
 
     }
 
+    public void StopCooling()
+    {
+        currentCoolingRate = 0.0f;
+
+        if (CheckIfTemperatureIsCorrect())
+        {
+            SetTaskSuccess(true);
+        }
+        
+    }
 
 }
