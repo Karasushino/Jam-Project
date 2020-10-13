@@ -15,6 +15,7 @@
               <e p="UI_Cupboard_Minigame.cs" t="Include" />
               <e p="UI_EnchantmentTable_Minigame.cs" t="Include" />
               <e p="UI_Potions_Minigame.cs" t="Include" />
+              <e p="UICauldronMinigame.cs" t="Include" />
               <e p="UITentacleMinigame.cs" t="Include" />
             </e>
             <e p="PlayerControler.cs" t="Include" />

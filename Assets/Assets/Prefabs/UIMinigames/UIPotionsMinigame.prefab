@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 3404988632198200466}
   - component: {fileID: 4766322171323820946}
   m_Layer: 5
-  m_Name: TaskBasePrefabUI
+  m_Name: UIPotionsMinigame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
