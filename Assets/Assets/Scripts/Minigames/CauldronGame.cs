@@ -40,20 +40,11 @@ public class CauldronGame : BaseTask
     protected override void Update()
     {
         base.Update();
-       // if (!bSuccess)
-       // {
-            UpdateTemperatureBar();
+       
+        UpdateTemperatureBar();
         CheckIfTemperatureIsCorrect();
         DecreaseTemperatureOverTime();
-       // }
-       // else
-       //{
-       //Disable it
-       // EnableUITask(false);
-
-        // Player.GetComponent<PlayerControler>().EnableMovement(true);
-        // ReturnMovementToPlayerOnUI();
-        //  }
+     
 
     }
 
@@ -64,7 +55,7 @@ public class CauldronGame : BaseTask
         if (currentTemperature > 0.0f)
         {
             currentTemperature -= Time.deltaTime * CoolingRate;
-            Debug.Log("Current Temperature: " + currentTemperature.ToString());
+            //Debug.Log("Current Temperature: " + currentTemperature.ToString());
         }
         else
         {
@@ -88,7 +79,7 @@ public class CauldronGame : BaseTask
         if (currentTemperature == temperatureNeeded)
         {
             bSuccess = true;
-            Debug.Log("Task Cauldron Completed");
+            Debug.Log("Cauldron Temperature is the correct one");
         }
             
     }
