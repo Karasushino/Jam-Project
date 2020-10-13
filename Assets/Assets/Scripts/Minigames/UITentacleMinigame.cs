@@ -7,6 +7,10 @@ public class UITentacleMinigame : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public GameObject[] Tools;
+    
+  //  public 
+
     public Slider flaskBar;
 
     public TextMeshProUGUI flaskText;
@@ -30,7 +34,7 @@ public class UITentacleMinigame : MonoBehaviour
         
     }
     
-    void UpdateTemperatureBar()
+    void UpdateFlaskBar()
     {
         //Calculate percentage of bar filled based on max temperature
         percentageOfTempBar = (currentPorcentage / maxPorcentage);
@@ -42,8 +46,18 @@ public class UITentacleMinigame : MonoBehaviour
 
         //Now update the text on the screen.
         int roundTemperature = (int)currentPorcentage;
-       // temperatureText.text = roundTemperature.ToString();
+        flaskText.text = roundTemperature.ToString();
 
+    }
+
+    void FillFlask()
+    {
+        //Add to current temperature
+        currentPorcentage += porcToAddPerClick;
+
+        //If we added more temperature than we should have set it back to max
+        if (currentPorcentage > maxPorcentage)
+            currentPorcentage = maxPorcentage; 
     }
     
 }
