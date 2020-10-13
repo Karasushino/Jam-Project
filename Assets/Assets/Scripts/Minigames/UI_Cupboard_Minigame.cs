@@ -16,8 +16,9 @@ public class UI_Cupboard_Minigame : MonoBehaviour
     //Array of booleans for each object.
     private bool[] bObjectSelected;
     //Is the correct object selected?
-    private bool bCorrectSlection = false;
+    public bool bCorrectSlection = false;
 
+    public BaseTask cupboardTask;
 
 
 
@@ -30,14 +31,9 @@ public class UI_Cupboard_Minigame : MonoBehaviour
         bObjectSelected = new bool[numberOfObjects];
         numberOfObjects -= 1;
         //Pick a random correct Object.
-        IndexOfCorrectObject = Random.Range(0, numberOfObjects);
+        IndexOfCorrectObject = 2;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 
 
     public void SelectObject(int i)
@@ -56,10 +52,19 @@ public class UI_Cupboard_Minigame : MonoBehaviour
             if (i == IndexOfCorrectObject)
             {
                 bCorrectSlection = true;
+                cupboardTask.SetTaskSuccess(bCorrectSlection);
                 Debug.Log("Correct Selection");
+                cupboardTask.ReturnMovementToPlayerOnUI();
+                this.gameObject.SetActive(false);
             }
             else
+            {
                 Debug.Log("Wrong Selection");
+                cupboardTask.SetTaskSuccess(bCorrectSlection);
+                this.gameObject.SetActive(false);
+                cupboardTask.ReturnMovementToPlayerOnUI();
+            }
+                
 
         }
         Debug.Log("SelectObject called but selection is locked");
@@ -72,7 +77,7 @@ public class UI_Cupboard_Minigame : MonoBehaviour
             bObjectSelected[i] = false;
 
         bAnySelection = false;
-
+        cupboardTask.SetTaskSuccess(false);
         Debug.Log("Selection Unlocked, you can reselect now");
     }
 

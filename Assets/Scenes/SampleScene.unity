@@ -3118,6 +3118,11 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &488870739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2734761174779718042, guid: 56682cfe83af24445b40ba60c88c50d3, type: 3}
+  m_PrefabInstance: {fileID: 2734761176627948155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &499469376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4571,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1873080369}
     m_Modifications:
+    - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: UITask
+      value: 
+      objectReference: {fileID: 488870739}
+    - target: {fileID: 4258893796416621316, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.019104436
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258893796416621316, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: m_Size.x
+      value: 0.46976635
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258893796416621316, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0045345426
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258893796416621316, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6836299
+      objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621318, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: m_Name
       value: Cupboard Task
@@ -6091,6 +6116,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015823110}
     m_Modifications:
+    - target: {fileID: 711733104397260472, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3404988631425886600, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
       propertyPath: m_LocalScale.x
       value: 54.8
@@ -6227,6 +6256,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4766322171323820946, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
+      propertyPath: bSelection.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766322171323820946, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
+      propertyPath: potionsTask
+      value: 
+      objectReference: {fileID: 2060996658}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
 --- !u!1 &1552628127
@@ -6857,6 +6894,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1897359377 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+  m_PrefabInstance: {fileID: 1076037028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1912115384
@@ -7538,6 +7586,7 @@ MonoBehaviour:
   UITask: {fileID: 1706691154}
   Player: {fileID: 0}
   sDescription: 
+  bSuccess: 0
 --- !u!1 &2071163009
 GameObject:
   m_ObjectHideFlags: 0
@@ -7736,6 +7785,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015823110}
     m_Modifications:
+    - target: {fileID: 2734761174779718040, guid: 56682cfe83af24445b40ba60c88c50d3, type: 3}
+      propertyPath: cupboardTask
+      value: 
+      objectReference: {fileID: 1897359377}
     - target: {fileID: 2734761174779718041, guid: 56682cfe83af24445b40ba60c88c50d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7874,6 +7927,7 @@ MonoBehaviour:
   UITask: {fileID: 0}
   Player: {fileID: 0}
   sDescription: 
+  bSuccess: 0
 --- !u!1001 &3319503803731996658
 PrefabInstance:
   m_ObjectHideFlags: 0
