@@ -20,18 +20,15 @@ public class BaseTask : MonoBehaviour
     //Flag is this Task is active or sleeping
     protected bool bIsActiveTask;
     //Task if succeed or failure in this task. 
-    protected bool bSuccess;
+    public bool bSuccess;
     //Count Errors in the Task
     protected int nErrors; 
+    
+    
     
     ////////////////////////////////// MAIN FUNCTIONS  //////////////////////////////////
     
     // Start is called before the first frame update
-    private void Awake()
-    {
-        sDescription = "Step 1: Task #1";
-    }
-
     void Start()
     {
         
