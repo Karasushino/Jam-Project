@@ -581,14 +581,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 189413775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d047a6c42f0b0d9419c9034f026dbcbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 713f6437fa1992842a1f264f8411b8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BookMaterial: {fileID: 0}
-  originalColor: {r: 3867.75, g: 3705.75, b: 0, a: 1}
-  startingIntensity: 4.5
-  MinIntensity: 2
-  MaxIntensity: 0.69
   factor: 2.24
   thePointlight: {fileID: 597163622}
   MinRadius: 1.3
@@ -936,14 +931,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 399798229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d047a6c42f0b0d9419c9034f026dbcbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 713f6437fa1992842a1f264f8411b8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BookMaterial: {fileID: 0}
-  originalColor: {r: 3867.75, g: 3705.75, b: 0, a: 1}
-  startingIntensity: 4.5
-  MinIntensity: 2
-  MaxIntensity: 0.69
   factor: 2.24
   thePointlight: {fileID: 1526480998}
   MinRadius: 1.3
@@ -6807,6 +6797,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIPotionsMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 3404988632198200469, guid: 535559df1431ceb40b09c5b34ce2de79, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404988632467870832, guid: 535559df1431ceb40b09c5b34ce2de79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5311040383015767268, guid: 535559df1431ceb40b09c5b34ce2de79, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 535559df1431ceb40b09c5b34ce2de79, type: 3}
 --- !u!1 &1658705435
@@ -7476,7 +7478,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2161464818885710507, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
   m_PrefabInstance: {fileID: 5519694094508194671}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1940947068
+--- !u!114 &1940947067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7485,14 +7487,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1940947066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d047a6c42f0b0d9419c9034f026dbcbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 713f6437fa1992842a1f264f8411b8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BookMaterial: {fileID: 0}
-  originalColor: {r: 859.5, g: 823.5, b: 0, a: 1}
-  startingIntensity: 4.5
-  MinIntensity: 2
-  MaxIntensity: 0.69
   factor: 5.23
   thePointlight: {fileID: 276887578}
   MinRadius: 0.87
