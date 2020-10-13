@@ -1,103 +1,79 @@
 fileFormatVersion: 2
-guid: 3bc2011d118f8c74ea07ee347ae5eeff
+guid: 4e4dbc35bf9fb0b4b8c980e05ad09ec7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2007131243931206709
-    second: bluewizardwalk-Sheet (1)_0
+      213: -8563489335084092949
+    second: spritesheetredwizard-export_0
   - first:
-      213: 941447617665364870
-    second: bluewizardwalk-Sheet (1)_1
+      213: -6716989172360175680
+    second: spritesheetredwizard-export_1
   - first:
-      213: -1185327599378819980
-    second: bluewizardwalk-Sheet (1)_2
+      213: 3199850445092012185
+    second: spritesheetredwizard-export_2
   - first:
-      213: 6780838719657760978
-    second: bluewizardwalk-Sheet (1)_3
+      213: 9044241496521031737
+    second: spritesheetredwizard-export_3
   - first:
-      213: -1746046641319819000
-    second: bluewizardwalk-Sheet (1)_4
+      213: 8505723222004155741
+    second: spritesheetredwizard-export_4
   - first:
-      213: 7713254798618184256
-    second: bluewizardwalk-Sheet (1)_5
+      213: -2041296458486129610
+    second: spritesheetredwizard-export_5
   - first:
-      213: -2655169253078053623
-    second: bluewizardwalk-Sheet (1)_6
+      213: 112408153545304142
+    second: spritesheetredwizard-export_6
   - first:
-      213: 7943178008371608100
-    second: bluewizardwalk-Sheet (1)_7
+      213: -5938130914728728893
+    second: spritesheetredwizard-export_7
   - first:
-      213: 3449670177776561474
-    second: bluewizardwalk-Sheet (1)_8
+      213: 3346902032504584847
+    second: spritesheetredwizard-export_8
   - first:
-      213: -8180073159489163390
-    second: bluewizardwalk-Sheet (1)_9
+      213: -5640970835051288067
+    second: spritesheetredwizard-export_9
   - first:
-      213: -7162945321159377463
-    second: bluewizardwalk-Sheet (1)_10
+      213: -6673028339878952774
+    second: spritesheetredwizard-export_10
   - first:
-      213: -7428579334931247449
-    second: bluewizardwalk-Sheet (1)_11
+      213: 6920414528522673085
+    second: spritesheetredwizard-export_11
   - first:
-      213: -3837627098937039473
-    second: bluewizardwalk-Sheet (1)_12
+      213: 3716634889050014942
+    second: spritesheetredwizard-export_12
   - first:
-      213: 5011343946706205078
-    second: bluewizardwalk-Sheet (1)_13
+      213: 5690880645949058830
+    second: spritesheetredwizard-export_13
   - first:
-      213: -4828470630926848931
-    second: bluewizardwalk-Sheet (1)_14
+      213: -8615385122472069648
+    second: spritesheetredwizard-export_14
   - first:
-      213: -1554352750647964322
-    second: bluewizardwalk-Sheet (1)_15
+      213: 7183286635734811509
+    second: spritesheetredwizard-export_15
   - first:
-      213: -5264412525011455572
-    second: bluewizardwalk-Sheet (1)_16
+      213: -1351747552694285514
+    second: spritesheetredwizard-export_16
   - first:
-      213: 4847430312140297056
-    second: bluewizardwalk-Sheet (1)_17
+      213: 3770380544267674935
+    second: spritesheetredwizard-export_17
   - first:
-      213: -5820413849798187028
-    second: bluewizardwalk-Sheet (1)_18
+      213: 3840422309679967920
+    second: spritesheetredwizard-export_18
   - first:
-      213: 783105732968563848
-    second: bluewizardwalk-Sheet (1)_19
+      213: -8571959253104403746
+    second: spritesheetredwizard-export_19
   - first:
-      213: 6901501771756154351
-    second: bluewizardwalk-Sheet (1)_20
+      213: -1033089425245438423
+    second: spritesheetredwizard-export_20
   - first:
-      213: -8566114588984994958
-    second: bluewizardwalk-Sheet (1)_21
+      213: 8298071166214174383
+    second: spritesheetredwizard-export_21
   - first:
-      213: -2875067450997560620
-    second: bluewizardwalk-Sheet (1)_22
+      213: 8387153598622179662
+    second: spritesheetredwizard-export_22
   - first:
-      213: -7910470551050019783
-    second: bluewizardwalk-Sheet (1)_23
-  - first:
-      213: 4905601370977713883
-    second: bluewizardwalk-Sheet (1)_24
-  - first:
-      213: -1807101457901005077
-    second: bluewizardwalk-Sheet (1)_25
-  - first:
-      213: 8136357528374139028
-    second: bluewizardwalk-Sheet (1)_26
-  - first:
-      213: -4850591111995803492
-    second: bluewizardwalk-Sheet (1)_27
-  - first:
-      213: -711140216787785787
-    second: bluewizardwalk-Sheet (1)_28
-  - first:
-      213: -7524943846571507523
-    second: bluewizardwalk-Sheet (1)_29
-  - first:
-      213: -2335183203744726976
-    second: bluewizardwalk-Sheet (1)_30
-  - first:
-      213: -658201115513392919
-    second: bluewizardwalk-Sheet (1)_31
+      213: -374242958029725648
+    second: spritesheetredwizard-export_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -223,31 +199,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_0
+      name: spritesheetredwizard-export_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 331
-        width: 30
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5348b1c6b33cadb10800000000000000
-      internalID: 2007131243931206709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_1
-      rect:
-        serializedVersion: 2
-        x: 42
+        x: 10
         y: 331
         width: 31
         height: 41
@@ -258,38 +213,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 683f499ce91b01d00800000000000000
-      internalID: 941447617665364870
+      spriteID: be1777032df582980800000000000000
+      internalID: -8563489335084092949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_2
+      name: spritesheetredwizard-export_1
       rect:
         serializedVersion: 2
-        x: 73
-        y: 331
-        width: 30
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4741f8814dedc8fe0800000000000000
-      internalID: -1185327599378819980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_3
-      rect:
-        serializedVersion: 2
-        x: 104
+        x: 41
         y: 331
         width: 31
         height: 41
@@ -300,19 +234,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d85a6c93e06a1e50800000000000000
-      internalID: 6780838719657760978
+      spriteID: 0cf93559fe578c2a0800000000000000
+      internalID: -6716989172360175680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_4
+      name: spritesheetredwizard-export_2
       rect:
         serializedVersion: 2
-        x: 6
+        x: 77
+        y: 331
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990c51ab607286c20800000000000000
+      internalID: 3199850445092012185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetredwizard-export_3
+      rect:
+        serializedVersion: 2
+        x: 7
         y: 284
-        width: 32
+        width: 31
         height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -321,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8094ed6a4dbc4c7e0800000000000000
-      internalID: -1746046641319819000
+      spriteID: 930cbfef8b9938d70800000000000000
+      internalID: 9044241496521031737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_5
+      name: spritesheetredwizard-export_4
       rect:
         serializedVersion: 2
         x: 38
@@ -342,38 +297,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04ac6bd6f5cfa0b60800000000000000
-      internalID: 7713254798618184256
+      spriteID: d55495584366a0670800000000000000
+      internalID: 8505723222004155741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_6
+      name: spritesheetredwizard-export_5
       rect:
         serializedVersion: 2
-        x: 70
-        y: 284
-        width: 32
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90d4ebbc1a1f62bd0800000000000000
-      internalID: -2655169253078053623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_7
-      rect:
-        serializedVersion: 2
-        x: 102
+        x: 75
         y: 284
         width: 31
         height: 41
@@ -384,19 +318,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42a3fa85056db3e60800000000000000
-      internalID: 7943178008371608100
+      spriteID: 63cdbaeafabdba3e0800000000000000
+      internalID: -2041296458486129610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_8
+      name: spritesheetredwizard-export_6
       rect:
         serializedVersion: 2
-        x: 10
+        x: 11
         y: 239
-        width: 26
+        width: 25
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -405,59 +339,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24d61a2efb0bfdf20800000000000000
-      internalID: 3449670177776561474
+      spriteID: e48ecedbe9a5f8100800000000000000
+      internalID: 112408153545304142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_9
+      name: spritesheetredwizard-export_7
       rect:
         serializedVersion: 2
         x: 43
-        y: 240
-        width: 25
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28fe0f32dca8a7e80800000000000000
-      internalID: -8180073159489163390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_10
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 239
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cdbfba6e2b189c90800000000000000
-      internalID: -7162945321159377463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_11
-      rect:
-        serializedVersion: 2
-        x: 105
         y: 239
         width: 25
         height: 40
@@ -468,19 +360,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ae8d93047268e890800000000000000
-      internalID: -7428579334931247449
+      spriteID: 3c624d50565879da0800000000000000
+      internalID: -5938130914728728893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_12
+      name: spritesheetredwizard-export_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 239
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8af7797aa5927e20800000000000000
+      internalID: 3346902032504584847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetredwizard-export_9
       rect:
         serializedVersion: 2
         x: 13
         y: 194
-        width: 25
+        width: 26
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -489,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f85e1737c720ebac0800000000000000
-      internalID: -3837627098937039473
+      spriteID: df9ed64a9ee37b1b0800000000000000
+      internalID: -5640970835051288067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_13
+      name: spritesheetredwizard-export_10
       rect:
         serializedVersion: 2
         x: 45
@@ -510,38 +423,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6993abea4cedb8540800000000000000
-      internalID: 5011343946706205078
+      spriteID: ab086618414a463a0800000000000000
+      internalID: -6673028339878952774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_14
+      name: spritesheetredwizard-export_11
       rect:
         serializedVersion: 2
-        x: 75
-        y: 195
-        width: 25
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5ce2332b83ddfcb0800000000000000
-      internalID: -4828470630926848931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_15
-      rect:
-        serializedVersion: 2
-        x: 107
+        x: 80
         y: 194
         width: 26
         height: 40
@@ -552,19 +444,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5d0af99864dd6ae0800000000000000
-      internalID: -1554352750647964322
+      spriteID: dbbdb0709504a0060800000000000000
+      internalID: 6920414528522673085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_16
+      name: spritesheetredwizard-export_12
       rect:
         serializedVersion: 2
-        x: 10
+        x: 11
         y: 150
-        width: 26
+        width: 25
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -573,19 +465,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca1339753bc01f6b0800000000000000
-      internalID: -5264412525011455572
+      spriteID: ed446a17db3249330800000000000000
+      internalID: 3716634889050014942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_17
+      name: spritesheetredwizard-export_13
       rect:
         serializedVersion: 2
-        x: 41
+        x: 42
         y: 150
-        width: 26
+        width: 25
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -594,19 +486,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0635594af28854340800000000000000
-      internalID: 4847430312140297056
+      spriteID: e0f60f0cbc11afe40800000000000000
+      internalID: 5690880645949058830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_18
+      name: spritesheetredwizard-export_14
       rect:
         serializedVersion: 2
-        x: 71
+        x: 79
         y: 150
-        width: 26
+        width: 25
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -615,40 +507,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7e305017cb93fa0800000000000000
-      internalID: -5820413849798187028
+      spriteID: 0f5fddb90e0007880800000000000000
+      internalID: -8615385122472069648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_19
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 150
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884c92bd3862eda00800000000000000
-      internalID: 783105732968563848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_20
+      name: spritesheetredwizard-export_15
       rect:
         serializedVersion: 2
         x: 14
         y: 105
-        width: 26
+        width: 25
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -657,103 +528,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed2142bb4f07cf50800000000000000
-      internalID: 6901501771756154351
+      spriteID: 573c8c2f22920b360800000000000000
+      internalID: 7183286635734811509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_21
+      name: spritesheetredwizard-export_16
       rect:
         serializedVersion: 2
         x: 48
         y: 105
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2731242aa2c0f1980800000000000000
-      internalID: -8566114588984994958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_22
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 105
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4daa006d265b918d0800000000000000
-      internalID: -2875067450997560620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_23
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 105
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93c997ef1fc583290800000000000000
-      internalID: -7910470551050019783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_24
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 55
         width: 25
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdebbc6b472341440800000000000000
-      internalID: 4905601370977713883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_25
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 56
-        width: 24
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -762,20 +549,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be658b86cc2ebe6e0800000000000000
-      internalID: -1807101457901005077
+      spriteID: 63b47af33c0ad3de0800000000000000
+      internalID: -1351747552694285514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_26
+      name: spritesheetredwizard-export_17
       rect:
         serializedVersion: 2
-        x: 77
-        y: 55
+        x: 82
+        y: 105
         width: 25
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,18 +570,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498d05450162ae070800000000000000
-      internalID: 8136357528374139028
+      spriteID: 7356e11f025135430800000000000000
+      internalID: 3770380544267674935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_27
+      name: spritesheetredwizard-export_18
       rect:
         serializedVersion: 2
-        x: 109
-        y: 55
+        x: 13
+        y: 52
         width: 24
         height: 40
       alignment: 0
@@ -804,82 +591,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c98b2da451d3facb0800000000000000
-      internalID: -4850591111995803492
+      spriteID: 0bea5f34ebbeb4530800000000000000
+      internalID: 3840422309679967920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_28
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 8
-        width: 24
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c7aed89db58126f0800000000000000
-      internalID: -711140216787785787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_29
+      name: spritesheetredwizard-export_19
       rect:
         serializedVersion: 2
         x: 45
-        y: 8
-        width: 25
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db0085eb077029790800000000000000
-      internalID: -7524943846571507523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_30
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 9
+        y: 52
         width: 24
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 040465f9f33c79fd0800000000000000
-      internalID: -2335183203744726976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bluewizardwalk-Sheet (1)_31
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 8
-        width: 25
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -888,8 +612,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e0fe0f92999dd6f0800000000000000
-      internalID: -658201115513392919
+      spriteID: edad699b9784a0980800000000000000
+      internalID: -8571959253104403746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetredwizard-export_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 52
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e780b24aab9a1f0800000000000000
+      internalID: -1033089425245438423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetredwizard-export_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa67b17b2cba82370800000000000000
+      internalID: 8298071166214174383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetredwizard-export_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 4
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41a38ac2c7256470800000000000000
+      internalID: 8387153598622179662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetredwizard-export_23
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03062f2330c6ecaf0800000000000000
+      internalID: -374242958029725648
       vertices: []
       indices: 
       edges: []
@@ -897,7 +705,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c0aa5dafb23fa9842b30c542fd55fa0f
+    spriteID: 802b60652132d8547b8bff35f95d76cd
     internalID: 0
     vertices: []
     indices: 
