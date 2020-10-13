@@ -7,6 +7,21 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+<<<<<<< Updated upstream
+=======
+        <e p="Assets" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BaseTask.cs" t="Include" />
+            <e p="CauldronGame.cs" t="Include" />
+            <e p="PlayerControler.cs" t="Include" />
+            <e p="SimpleCameraController.cs" t="Include" />
+            <e p="TaskLog.cs" t="Include" />
+            <e p="UI_EnchantmentTable_Minigame.cs" t="Include" />
+            <e p="UI_Potions_Minigame.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ChangeLightRadius.cs" t="Include" />
+>>>>>>> Stashed changes
         <e p="Mirror" t="Include">
           <e p="Authenticators" t="Include">
             <e p="BasicAuthenticator.cs" t="Include" />
