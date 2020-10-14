@@ -28,6 +28,7 @@
             <e p="TaskLog.cs" t="Include" />
           </e>
         </e>
+        <e p="CauldronController.cs" t="Include" />
         <e p="Mirror" t="Include">
           <e p="Authenticators" t="Include">
             <e p="BasicAuthenticator.cs" t="Include" />
@@ -377,6 +378,7 @@
           </e>
           <e p="version.txt" t="Include" />
         </e>
+        <e p="OctopulController.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

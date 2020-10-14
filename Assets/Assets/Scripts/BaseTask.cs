@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class BaseTask : NetworkBehaviour
 {
-    public string PlayerTag = "Playe";
+    public String PlayerTag;
 
     //Object for the task Graphic Representation
     public GameObject UITask;
@@ -47,10 +47,10 @@ public class BaseTask : NetworkBehaviour
     protected virtual void Update()
     {
         //If the player is in Range of the Task...
-        if (bPlayerIn && IsTaskActive())
+        if (bPlayerIn && IsTaskActive() && Player.CompareTag(PlayerTag))
         {
             //... and it pushes the "Fire1" button..
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") )
             {
                 
                 //Enable the UI Task Minigame

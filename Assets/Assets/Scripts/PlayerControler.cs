@@ -41,7 +41,7 @@ public class PlayerControler : NetworkBehaviour
                 animator.SetFloat("Last Vertical", movement.y);
             }
 
-
+            
         }
 
 
@@ -68,5 +68,10 @@ public class PlayerControler : NetworkBehaviour
 
         //Debug
         Debug.Log("Enable Movement Function was called");
+    }
+
+    public bool InputAction()
+    {
+        return Input.GetButtonDown("Fire1");
     }
 }
