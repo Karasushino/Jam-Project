@@ -21,8 +21,7 @@ public class BaseTask : MonoBehaviour
     protected bool bIsActiveTask;
     //Task if succeed or failure in this task. 
     public bool bSuccess;
-    //Count Errors in the Task
-    protected int nErrors; 
+    public bool bCompleted;
     
     
     
@@ -34,7 +33,8 @@ public class BaseTask : MonoBehaviour
         
         bIsActiveTask = false;
         bSuccess = false;
-        nErrors = 0;
+        bCompleted = false;
+        
     }
 
     // Update is called once per frame
@@ -95,7 +95,14 @@ public class BaseTask : MonoBehaviour
     public void SetActiveTask(bool b)
     {
         bIsActiveTask = b;
+        bCompleted = false;
     }
+
+    public bool isCompleted()
+    {
+        return bCompleted;
+    }
+    
     //Set task result
     public void SetTaskSuccess(bool b)
     {
@@ -113,6 +120,12 @@ public class BaseTask : MonoBehaviour
     {
         return bIsActiveTask;
     }
+
+    public void setActiveTask(bool b)
+    {
+        bIsActiveTask = b;
+    }
+    
     //Get if the task is success or failure
     public bool GetTaskSuccess()
     {
