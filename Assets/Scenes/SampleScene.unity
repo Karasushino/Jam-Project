@@ -428,6 +428,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3579140377820167832, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
   m_PrefabInstance: {fileID: 3579140378050040129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &399798235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399798229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UITask: {fileID: 1997774849}
+  Player: {fileID: 0}
+  sDescription: Heat the couldron to 80 degrees and introduce all ingredients.
+  bSuccess: 0
 --- !u!1 &400958252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,6 +3689,11 @@ Transform:
   m_Father: {fileID: 1157017128}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &950295839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
+  m_PrefabInstance: {fileID: 1288932263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &950809991 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9183662647324839198, guid: 4198d842838f03e428bd71012bdc9e31, type: 3}
@@ -4420,6 +4441,7 @@ RectTransform:
   - {fileID: 1849050082}
   - {fileID: 8155985927812270011}
   - {fileID: 1185866720}
+  - {fileID: 2020614956}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4868,6 +4890,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015823110}
     m_Modifications:
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: BaseTask
+      value: 
+      objectReference: {fileID: 1976732796}
     - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -4878,7 +4904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_Name
-      value: UI Cauldron Minigame
+      value: Left UI Cauldron Minigame
       objectReference: {fileID: 0}
     - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_IsActive
@@ -7429,6 +7455,32 @@ MonoBehaviour:
   MinRadius: 3
   MaxRadius: 3.85
   startingRadius: 3.45
+--- !u!1 &1976732794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7372624485833138135, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
+  m_PrefabInstance: {fileID: 8209400446837613327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1976732796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976732794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UITask: {fileID: 950295839}
+  Player: {fileID: 0}
+  sDescription: Heat the couldron to 80 degrees and introduce all ingredients.
+  bSuccess: 0
+--- !u!1 &1997774849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
+  m_PrefabInstance: {fileID: 2020614955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2007790352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7613,6 +7665,124 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
+--- !u!1001 &2020614955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1015823110}
+    m_Modifications:
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: BaseTask
+      value: 
+      objectReference: {fileID: 399798235}
+    - target: {fileID: 7605370328874931111, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329071629088, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_Name
+      value: Right UI Cauldron Minigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409341, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -15.462509
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 40.477524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1464.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 787.3629
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15b642eba0787db48912841baa243076, type: 3}
+--- !u!224 &2020614956 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7605370329093409474, guid: 15b642eba0787db48912841baa243076, type: 3}
+  m_PrefabInstance: {fileID: 2020614955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2060996654 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6567532857823234208, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
@@ -8845,7 +9015,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8209400446758574751, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
 --- !u!1001 &8683397161163734437
 PrefabInstance:

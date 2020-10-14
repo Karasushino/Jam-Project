@@ -17,7 +17,7 @@ public class UICauldronMinigame : MonoBehaviour
 
     //Variables in Editor
     [SerializeField]
-    private float temperatureNeeded = 80.0f;
+    public float temperatureNeeded = 80.0f;
     [SerializeField]
     //The temperature the Cauldron is at the start of the mini game
     private float currentTemperature = 40.0f;
@@ -32,10 +32,12 @@ public class UICauldronMinigame : MonoBehaviour
     private float CoolingRate;
 
     private float maxCoolingRate = 1.0f;
-
+    public BaseTask BaseTask;
     public Button buttonHeatUp;
     public Button buttonIngredients;
+   
 
+    private IEnumerator coroutine;
     //Private variables 
     //The percentage filled of the bar to show the player
     private float percentageOfTempBar = 0.0f;
@@ -55,8 +57,8 @@ public class UICauldronMinigame : MonoBehaviour
        
         UpdateTemperatureBar();
         DecreaseTemperatureOverTime();
-     
 
+        TaskSuccess = CheckIfTemperatureIsCorrect();
     }
 
 
@@ -85,16 +87,17 @@ public class UICauldronMinigame : MonoBehaviour
             currentTemperature = maxTemperature;
     }
 
-    void CheckIfTemperatureIsCorrect()
+    bool CheckIfTemperatureIsCorrect()
     {
-        if (currentTemperature == temperatureNeeded)
+        if (Mathf.Floor(currentTemperature) == Mathf.Floor(temperatureNeeded))
         {
-            TaskSuccess = true;
+           
             Debug.Log("Cauldron Temperature is the correct one");
+            return true;
         }
         else
         {
-            TaskSuccess = false;
+            return false;
         }
              
     }
@@ -118,9 +121,13 @@ public class UICauldronMinigame : MonoBehaviour
     public void StopCooling()
     {
         CoolingRate = 0.0f;
-        CheckIfTemperatureIsCorrect();
+        
         buttonHeatUp.interactable = false;
         buttonIngredients.interactable = false;
+        BaseTask.SetTaskSuccess(CheckIfTemperatureIsCorrect());
+        BaseTask.ReturnMovementToPlayerOnUI();
+        this.gameObject.SetActive(false);
+        //CheckIfTemperatureIsCorrect()
     }
 
    public void RestartMinigame()
@@ -129,7 +136,8 @@ public class UICauldronMinigame : MonoBehaviour
         TaskSuccess = false;
         buttonHeatUp.interactable = true;
         buttonIngredients.interactable = true;
+        
     }
-    
+
 
 }
