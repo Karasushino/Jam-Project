@@ -55,14 +55,17 @@ public class UI_Cupboard_Minigame : MonoBehaviour
                 cupboardTask.SetTaskSuccess(bCorrectSlection);
                 Debug.Log("Correct Selection");
                 cupboardTask.ReturnMovementToPlayerOnUI();
+                cupboardTask.setCompleted(true);
                 this.gameObject.SetActive(false);
             }
             else
             {
                 Debug.Log("Wrong Selection");
                 cupboardTask.SetTaskSuccess(bCorrectSlection);
-                this.gameObject.SetActive(false);
                 cupboardTask.ReturnMovementToPlayerOnUI();
+                cupboardTask.setCompleted(true);
+                this.gameObject.SetActive(false);
+                
             }
                 
 

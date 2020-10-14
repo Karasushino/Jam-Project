@@ -100,12 +100,14 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
                 baseTask.SetTaskSuccess(true);
                 baseTask.ReturnMovementToPlayerOnUI();
                 this.gameObject.SetActive(false);
+                baseTask.setCompleted(true);
             }
             else
             {
                 baseTask.SetTaskSuccess(false);
                 baseTask.ReturnMovementToPlayerOnUI();
                 this.gameObject.SetActive(false);
+                baseTask.setCompleted(true);
             }
         }
     }

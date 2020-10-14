@@ -95,11 +95,12 @@ public class UITentacleMinigame : MonoBehaviour
         {
             //Add to current temperature
             currentPorcentage += porcToAddPerClick;
-
+            baseTask.setCompleted(true);
             //If we added more temperature than we should have set it back to max
             if (currentPorcentage >= objectivePorcentage)
             {
                currentPorcentage = objectivePorcentage;
+              
                 baseTask.SetTaskSuccess(bCorrectAnswere);
                 baseTask.ReturnMovementToPlayerOnUI();
                 this.gameObject.SetActive(false);

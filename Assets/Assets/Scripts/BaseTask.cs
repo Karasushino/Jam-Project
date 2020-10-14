@@ -18,10 +18,11 @@ public class BaseTask : MonoBehaviour
     //String For This Task Name
     private String sTaskName;
     //Flag is this Task is active or sleeping
-    protected bool bIsActiveTask;
+    public bool bIsActiveTask;
     //Task if succeed or failure in this task. 
     public bool bSuccess;
     public bool bCompleted;
+   // public TaskLog taskLog; 
     
     
     
@@ -31,9 +32,9 @@ public class BaseTask : MonoBehaviour
     void Start()
     {
         
-        bIsActiveTask = false;
-        bSuccess = false;
-        bCompleted = false;
+    //    bIsActiveTask = false;
+      //  bSuccess = false;
+     //   bCompleted = false;
         
     }
 
@@ -95,18 +96,26 @@ public class BaseTask : MonoBehaviour
     public void SetActiveTask(bool b)
     {
         bIsActiveTask = b;
-        bCompleted = false;
+    //    bCompleted = false;
     }
 
     public bool isCompleted()
     {
         return bCompleted;
     }
+
+    public void setCompleted(bool b)
+    {
+        bCompleted = b;
+    }
     
     //Set task result
     public void SetTaskSuccess(bool b)
     {
         bSuccess = b;
+        
+        
+        
     }
     //Set The Task Description
     public void SetTaskDescription(string s)

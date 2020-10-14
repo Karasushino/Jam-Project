@@ -96,6 +96,7 @@ public class UI_Potions_Minigame : MonoBehaviour
  {
      potionsTask.SetTaskSuccess(bWin);
      this.gameObject.SetActive(false);
+     potionsTask.setCompleted(true);
      potionsTask.ReturnMovementToPlayerOnUI();
  }
  

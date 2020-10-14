@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,8 +7,7 @@ using UnityEngine.UI;
 
 public class TaskLog : MonoBehaviour
 {
-    //Create Instance For this Object BaseTask Script
-    private BaseTask ScriptBaseTask;
+
     //Array of the different Tasks that this books contains
     public BaseTask[] ThisBookTasks;
     //Array of the Texts inside the book
@@ -17,29 +17,36 @@ public class TaskLog : MonoBehaviour
     public TMP_FontAsset fEnglish; 
 
     // Start is called before the first frame update
-    void Start()
+    public int activeTasks = 0;
+
+    private void Start()
     {
-        //Initialize Base Script of this object
-        ScriptBaseTask = this.GetComponent<BaseTask>();
-        //Add Descriotion of Task 0 to the UI Text inside this book
+        ThisBookTasks[0].SetActiveTask(true);
+
         for (int i = 0; i < ThisBookTasks.Length; i++)
         {
-            //ArrayUITexts[i].SetText(ThisBookTasks[i].GetComponent<BaseTask>().GetTaskDescription());
-             
+            ArrayUITexts[i].GetComponent<TextMeshProUGUI>().text = ThisBookTasks[i].GetTaskDescription();
         }
-        
-       ThisBookTasks[0].SetActiveTask(true);
-    
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+
+        
         for (int i = 0; i < ThisBookTasks.Length; i++)
         {
+           
             if (ThisBookTasks[i].isCompleted())
             {
                 ArrayUITexts[i].GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Strikethrough;
+                if (i + 1 < 3)
+                {
+                    ThisBookTasks[i+1].SetActiveTask(true);
+                }
+                
             }
 
             if (ThisBookTasks[i].IsTaskActive())
@@ -52,6 +59,5 @@ public class TaskLog : MonoBehaviour
             }
         }
     }
-    
-    
+   
 }

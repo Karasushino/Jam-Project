@@ -126,6 +126,7 @@ public class UICauldronMinigame : MonoBehaviour
         buttonIngredients.interactable = false;
         BaseTask.SetTaskSuccess(CheckIfTemperatureIsCorrect());
         BaseTask.ReturnMovementToPlayerOnUI();
+        BaseTask.setCompleted(true);
         this.gameObject.SetActive(false);
         //CheckIfTemperatureIsCorrect()
     }
