@@ -138,6 +138,7 @@ namespace Mirror
         [FormerlySerializedAs("m_PlayerPrefab")]
         [Tooltip("Prefab of the player object. Prefab must have a Network Identity component. May be an empty game object or a full avatar.")]
         public GameObject playerPrefab;
+        public GameObject playerPrefab2;
 
         /// <summary>
         /// A flag to control whether or not player objects are automatically created on connect, and on scene change.
@@ -1331,10 +1332,18 @@ namespace Mirror
         /// <param name="conn">Connection from client.</param>
         public virtual void OnServerAddPlayer(NetworkConnection conn)
         {
+            //Default get player 1
+            GameObject playerPrefabSpawn = playerPrefab;
+
+            //If there is a connection, spawn player 2.
+            if(NetworkServer.connections.Count>1)
+            {
+                playerPrefabSpawn = playerPrefab2;
+            }    
+
             Transform startPos = GetStartPosition();
-            GameObject player = startPos != null
-                ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
-                : Instantiate(playerPrefab);
+            GameObject player = Instantiate(playerPrefabSpawn, startPos.position, startPos.rotation);
+               
 
             NetworkServer.AddPlayerForConnection(conn, player);
         }
