@@ -487,6 +487,8 @@ GameObject:
   - component: {fileID: 2653636941340830059}
   - component: {fileID: 1653200939104915187}
   - component: {fileID: 377910448065124465}
+  - component: {fileID: 7283533857714814765}
+  - component: {fileID: 4441785984604891105}
   m_Layer: 5
   m_Name: Tentacle
   m_TagString: Untagged
@@ -608,6 +610,38 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &7283533857714814765
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360950571252608032}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfd5b1be1e223e346b26f8768e836d72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4441785984604891105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360950571252608032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0281530be85f82b4b806cd349e2ef5f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OctopusAnimator: {fileID: 7283533857714814765}
 --- !u!1 &833398057737571832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +2067,9 @@ MonoBehaviour:
   - {fileID: 3263807782531008085}
   flaskBar: {fileID: 1956475553247583040}
   flaskText: {fileID: 2300672425722318394}
+  baseTask: {fileID: 0}
   iRightTool: 2
+  bCorrectAnswere: 0
 --- !u!1 &9183662647932207048
 GameObject:
   m_ObjectHideFlags: 0

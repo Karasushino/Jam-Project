@@ -1,34 +1,22 @@
 fileFormatVersion: 2
-guid: ddfbfb55eb622f945aaa44fa49c5a2ce
+guid: 15de49a942d6a7b47a18f04cb9773b7a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -669376943214887984
-    second: cauldron_minigame_sprites_0
+      213: 2807548766200926727
+    second: runes_0
   - first:
-      213: 4107173996927796511
-    second: cauldron_minigame_sprites_1
+      213: -1667735088815940429
+    second: runes_1
   - first:
-      213: -755295031039357411
-    second: cauldron_minigame_sprites_2
+      213: -1572856820912322875
+    second: runes_2
   - first:
-      213: -6912248470255282575
-    second: cauldron_minigame_sprites_3
+      213: -539719522812852101
+    second: runes_3
   - first:
-      213: 3393475215878949069
-    second: cauldron_minigame_sprites_4
-  - first:
-      213: -3413398372645182902
-    second: cauldron_minigame_sprites_5
-  - first:
-      213: -3946172129383116433
-    second: cauldron_minigame_sprites_6
-  - first:
-      213: -4853720437143660827
-    second: cauldron_minigame_sprites_7
-  - first:
-      213: -3304702385739677748
-    second: cauldron_minigame_sprites_8
+      213: -577655725520609548
+    second: runes_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,7 +80,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -104,7 +92,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -154,190 +142,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cauldron_minigame_sprites_0
+      name: runes_0
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1522
-        width: 589
-        height: 917
+        x: 129
+        y: 535
+        width: 195
+        height: 458
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dbf6d67735e5b6f0800000000000000
-      internalID: -669376943214887984
+      spriteID: 7021ef25aba66f620800000000000000
+      internalID: 2807548766200926727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron_minigame_sprites_1
+      name: runes_1
       rect:
         serializedVersion: 2
-        x: 873
-        y: 1519
-        width: 589
-        height: 917
+        x: 412
+        y: 536
+        width: 195
+        height: 458
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f154a9d4dfc9ff830800000000000000
-      internalID: 4107173996927796511
+      spriteID: 3bcdba3d5c30bd8e0800000000000000
+      internalID: -1667735088815940429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron_minigame_sprites_2
+      name: runes_2
       rect:
         serializedVersion: 2
-        x: 1741
-        y: 1519
-        width: 589
-        height: 917
+        x: 668
+        y: 549
+        width: 195
+        height: 458
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e0846cb27a485f0800000000000000
-      internalID: -755295031039357411
+      spriteID: 5c688f20e071c2ae0800000000000000
+      internalID: -1572856820912322875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron_minigame_sprites_3
+      name: runes_3
       rect:
         serializedVersion: 2
-        x: 2715
-        y: 1565
-        width: 434
-        height: 219
+        x: 136
+        y: 19
+        width: 195
+        height: 458
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176523393a2c210a0800000000000000
-      internalID: -6912248470255282575
+      spriteID: b78856c14f78288f0800000000000000
+      internalID: -539719522812852101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron_minigame_sprites_4
+      name: runes_4
       rect:
         serializedVersion: 2
-        x: 873
-        y: 415
-        width: 589
-        height: 917
+        x: 418
+        y: 16
+        width: 195
+        height: 458
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc88e8cbabb081f20800000000000000
-      internalID: 3393475215878949069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron_minigame_sprites_5
-      rect:
-        serializedVersion: 2
-        x: 1741
-        y: 415
-        width: 589
-        height: 917
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a426699d34c21a0d0800000000000000
-      internalID: -3413398372645182902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron_minigame_sprites_6
-      rect:
-        serializedVersion: 2
-        x: 2722
-        y: 1228
-        width: 434
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6192952b516c39c0800000000000000
-      internalID: -3946172129383116433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron_minigame_sprites_7
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 415
-        width: 589
-        height: 917
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e69ff08afe14acb0800000000000000
-      internalID: -4853720437143660827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron_minigame_sprites_8
-      rect:
-        serializedVersion: 2
-        x: 2736
-        y: 1070
-        width: 31
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccfb99170b65322d0800000000000000
-      internalID: -3304702385739677748
+      spriteID: 4fe9fdd9d21cbf7f0800000000000000
+      internalID: -577655725520609548
       vertices: []
       indices: 
       edges: []
@@ -345,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e20e26f629422594cb1c21e4c7a3d35e
+    spriteID: 40eb8556b2de8de47b1d0d460a408dd6
     internalID: 0
     vertices: []
     indices: 
