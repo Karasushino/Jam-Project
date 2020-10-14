@@ -14,16 +14,18 @@ public class UITentacleMinigame : MonoBehaviour
     public Slider flaskBar;
 
     public TextMeshProUGUI flaskText;
-
-    private float objectivePorcentage = 90.0f;
+    public BaseTask baseTask;
+    private float objectivePorcentage = 100.0f;
     private float currentPorcentage = 1.0f;
-    private float porcToAddPerClick = 2.0f;
+    private float porcToAddPerClick = 5.0f;
     private float maxPorcentage = 100.0f;
 
     private float percentageOfTempBar = 0.0f;
 
     public int iRightTool = 2;
     private int iSelectedTool = 10;
+
+    public bool bCorrectAnswere; 
     void Start()
     {
 
@@ -57,6 +59,17 @@ public class UITentacleMinigame : MonoBehaviour
     {
         bHaveTool = true;
         iSelectedTool = i;
+
+        if (i == iRightTool)
+        {
+            bCorrectAnswere = true;
+        }
+        else
+        {
+            bCorrectAnswere = false;
+        }
+            
+        
         for (int a = 0; a < Tools.Length; a++)
         {
             Tools[a].GetComponent<Button>().interactable = false;
@@ -71,7 +84,9 @@ public class UITentacleMinigame : MonoBehaviour
         }
         iSelectedTool = 10;
         bHaveTool = false;
+        bCorrectAnswere = false;
         currentPorcentage = 1;
+        baseTask.SetTaskSuccess(bCorrectAnswere);
     }
     
    public void FillFlask()
@@ -82,8 +97,16 @@ public class UITentacleMinigame : MonoBehaviour
             currentPorcentage += porcToAddPerClick;
 
             //If we added more temperature than we should have set it back to max
-            if (currentPorcentage > maxPorcentage)
-                currentPorcentage = maxPorcentage; 
+            if (currentPorcentage >= objectivePorcentage)
+            {
+               currentPorcentage = objectivePorcentage;
+                baseTask.SetTaskSuccess(bCorrectAnswere);
+                baseTask.ReturnMovementToPlayerOnUI();
+                this.gameObject.SetActive(false);
+                
+            }
+                 
+            
         }
     }
     

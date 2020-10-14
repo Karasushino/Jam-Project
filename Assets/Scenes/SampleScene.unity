@@ -2981,6 +2981,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &435557251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+  m_PrefabInstance: {fileID: 8683397161163734437}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &468753131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2666170202129873717, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
@@ -3662,6 +3673,11 @@ Transform:
   m_Father: {fileID: 1157017128}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &950809991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9183662647324839198, guid: 4198d842838f03e428bd71012bdc9e31, type: 3}
+  m_PrefabInstance: {fileID: 1034998300333820578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &973451269
 GameObject:
   m_ObjectHideFlags: 0
@@ -7706,6 +7722,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1978014737169193640, guid: 4198d842838f03e428bd71012bdc9e31, type: 3}
+      propertyPath: baseTask
+      value: 
+      objectReference: {fileID: 435557251}
     - target: {fileID: 4114974871859386391, guid: 4198d842838f03e428bd71012bdc9e31, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -8837,6 +8857,14 @@ PrefabInstance:
     - target: {fileID: 8015540269629630176, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_Name
       value: Right Octopus Task
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: UITask
+      value: 
+      objectReference: {fileID: 950809991}
+    - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: sDescription
+      value: Get the third tool and tickle that tentacle until it spills enough ink
       objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630188, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_LocalPosition.x
