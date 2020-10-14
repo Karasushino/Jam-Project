@@ -67,18 +67,25 @@ public class UI_Potions_Minigame : NetworkBehaviour
  private void MixBottles()
  {
      
-     Color finalColor = colorA + colorB;
-     FinishedPotion.color = finalColor;
-     finishText.gameObject.SetActive(true);
-     exitButton.interactable = true;
-     if (bSelection[0] && bSelection[2])
+     Color finalColor;
+     if (bSelection[0] && bSelection[1])
      {
+         finalColor = Color.yellow;
+         bWin = false;
+     } else if (bSelection[0] && bSelection[2])
+     {
+         finalColor = Color.magenta; 
          bWin = true;
      }
      else
      {
+         finalColor = Color.cyan;
          bWin = false;
      }
+     FinishedPotion.color = finalColor;
+     finishText.gameObject.SetActive(true);
+     exitButton.interactable = true;
+
  }
 
  public void RestartMinigame()

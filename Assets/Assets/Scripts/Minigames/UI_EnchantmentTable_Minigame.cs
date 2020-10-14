@@ -38,10 +38,10 @@ public class UI_EnchantmentTable_Minigame : NetworkBehaviour
         this.gameObject.SetActive(false);
 
         nRunes = runes.Length;
-        UILimits.Top = 365.0f;
-        UILimits.Right = 766f;
-        UILimits.Bot = -369.0f;
-        UILimits.Left = -746.0f;
+        UILimits.Top = 300.0f;
+        UILimits.Right = 300f;
+        UILimits.Bot = -300.0f;
+        UILimits.Left = -300.0f;
 
 
         indexResult = 0;

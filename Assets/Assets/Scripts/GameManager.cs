@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class GameManager : MonoBehaviour
+public class GameManager : NetworkBehaviour
 {
 
     public BaseTask[] tasks;
+    [SyncVar]
     public bool CouldronA;
+    [SyncVar]
     public bool CouldronB;
     public bool Flag;
 
@@ -45,14 +48,14 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    public void setCouldronA()
+    [Command(ignoreAuthority = true)]
+    public void CmdSetCouldronA()
     {
         CouldronA = true;
     }
     
-    
-    public void setCouldronB()
+    [Command(ignoreAuthority = true)]
+    public void CmdSetCouldronB()
     {
         CouldronB = true;
     }
