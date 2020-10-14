@@ -20,15 +20,17 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
     private Limits UILimits;
 
     public bool[] bStopFalling;
-   
+
+    public BaseTask baseTask;
 
     public float[] startTime;
     public float[] JourneyLenght;
+    public bool[] bSelected;
     private int nRunes;
     public float[] done;
     public float speed;
     public float TimetToWait = 3.0f;
-    private int indexResult;
+    public int indexResult;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,12 +49,17 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
             bStopFalling[i] = false;
             done[i] = 0.0f;
             InitializeTransforms(i);
+            bSelected[i] = false;
+            
         }
     }
     
     // Update is called once per frame
     void Update()
     {
+
+        
+        
         float distCovered = Time.deltaTime * speed;
         
         for (int i = 0; i < nRunes; i++)
@@ -79,14 +86,28 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
     }
 
 
-    public void GiveButtonLocation()
-    {
-        Debug.Log("Rune Location. X:" +runes[0].transform.position.x + "Y: " +runes[0].transform.position.y);
-    }
 
     public void StopRune(int r)
     {
+        runes[r].GetComponent<Button>().interactable = false;
         bStopFalling[r] = true;
+        bSelected[r] = true;
+        indexResult++;
+        if (indexResult == 3)
+        {
+            if (bSelected[0] && bSelected[2] && bSelected[4])
+            {
+                baseTask.SetTaskSuccess(true);
+                baseTask.ReturnMovementToPlayerOnUI();
+                this.gameObject.SetActive(false);
+            }
+            else
+            {
+                baseTask.SetTaskSuccess(false);
+                baseTask.ReturnMovementToPlayerOnUI();
+                this.gameObject.SetActive(false);
+            }
+        }
     }
 
     void InitializeTransforms(int index)
@@ -96,4 +117,17 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
         startTime[index] = Time.time;
         JourneyLenght[index] = Vector3.Distance(runes[index].GetComponent<RectTransform>().localPosition, randomDestiny[index]);
     }
+
+   public void Restart()
+    {
+        for (int i = 0; i < runes.Length; i++)
+        {
+            runes[i].GetComponent<Button>().interactable = true;
+            bStopFalling[i] = false;
+            bSelected[i] = false;
+            indexResult = 0;
+        }
+        baseTask.SetTaskSuccess(false);
+    }
+    
 }
