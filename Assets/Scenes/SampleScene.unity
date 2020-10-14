@@ -892,7 +892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  PlayerTag: Player2
+  DesiredPlayerTag: Player2
   UITask: {fileID: 1997774849}
   Player: {fileID: 0}
   sDescription: Heat the couldron to eighty degrees and introduce all ingredients.
@@ -3958,6 +3958,10 @@ PrefabInstance:
       propertyPath: PlayerTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1710651931652189558, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
+      propertyPath: DesiredPlayerTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189560, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_Color.r
       value: 0.03391552
@@ -5772,6 +5776,10 @@ PrefabInstance:
       propertyPath: PlayerTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: DesiredPlayerTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621316, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: m_Offset.x
       value: -0.019104436
@@ -5802,7 +5810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621322, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.28153628
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621322, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9889,6 +9897,10 @@ PrefabInstance:
       propertyPath: PlayerTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2666170202129873722, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: DesiredPlayerTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3656174620413612628, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
       value: 3
@@ -10106,7 +10118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  PlayerTag: Player
+  DesiredPlayerTag: Player
   UITask: {fileID: 950295839}
   Player: {fileID: 0}
   sDescription: Heat the couldron to 80 degrees and introduce all ingredients.
@@ -10702,7 +10714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  PlayerTag: Player2
+  DesiredPlayerTag: Player2
   UITask: {fileID: 1706691154}
   Player: {fileID: 0}
   sDescription: 
@@ -12188,6 +12200,10 @@ PrefabInstance:
       propertyPath: PlayerTag
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: DesiredPlayerTag
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630188, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.165048
@@ -12376,6 +12392,10 @@ PrefabInstance:
       objectReference: {fileID: 1218409459}
     - target: {fileID: 6254538112881568850, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
       propertyPath: PlayerTag
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254538112881568850, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: DesiredPlayerTag
       value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 6425406895454405158, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}

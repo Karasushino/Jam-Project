@@ -3,12 +3,13 @@ using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class BaseTask : NetworkBehaviour
 {
-    public String PlayerTag;
-
+     public String DesiredPlayerTag;
+     
     //Object for the task Graphic Representation
     public GameObject UITask;
     //Flag true if the player is inside this object range
@@ -36,7 +37,7 @@ public class BaseTask : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     //    bIsActiveTask = false;
       //  bSuccess = false;
      //   bCompleted = false;
@@ -46,11 +47,13 @@ public class BaseTask : NetworkBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        
         //If the player is in Range of the Task...
-        if (bPlayerIn && IsTaskActive() && Player.CompareTag(PlayerTag))
+        if (bPlayerIn && IsTaskActive())
         {
+            this.GetComponent<NetworkIdentity>().AssignClientAuthority(Player.GetComponent<NetworkIdentity>().connectionToClient);
             //... and it pushes the "Fire1" button..
-            if (Input.GetButtonDown("Fire1") )
+            if (Input.GetButtonDown("Fire1") && hasAuthority)
             {
                 
                 //Enable the UI Task Minigame
@@ -66,7 +69,7 @@ public class BaseTask : NetworkBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         //If the player Enters In the trigger of this object. 
-        if (other.gameObject.CompareTag(PlayerTag))
+        if (other.gameObject.CompareTag(DesiredPlayerTag))
         {
             //Flag Player Entrance
             bPlayerIn = true;
@@ -75,6 +78,7 @@ public class BaseTask : NetworkBehaviour
             {
                 //Get Player's Game Object
                 Player = other.gameObject;
+             
             }
 
         }
@@ -82,7 +86,7 @@ public class BaseTask : NetworkBehaviour
     public void OnTriggerExit2D(Collider2D other)
     {
         //When the player leaves the trigger
-        if (other.gameObject.CompareTag(PlayerTag))
+        if (other.gameObject.CompareTag(DesiredPlayerTag))
         {
             //... set flag to false
             bPlayerIn = false;
@@ -161,10 +165,8 @@ public class BaseTask : NetworkBehaviour
             Debug.Log("ReturnMovementToPlayerOnUI() was called with a player");
             Player.GetComponent<PlayerControler>().EnableMovement(true);
   
-            //Debug.Log("ReturnMovementToPlayerOnUI() was called with no player object");
-        
+            //Debug.Log("ReturnMovementToPlayerOnUI() was called with no player object")
 
-       
     }
     
 }
