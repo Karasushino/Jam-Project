@@ -42,7 +42,7 @@ public class BaseTask : MonoBehaviour
     protected virtual void Update()
     {
         //If the player is in Range of the Task...
-        if (bPlayerIn)
+        if (bPlayerIn && IsTaskActive())
         {
             //... and it pushes the "Fire1" button..
             if (Input.GetButtonDown("Fire1"))

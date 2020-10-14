@@ -10,6 +10,7 @@
         <e p="Assets" t="Include">
           <e p="Scripts" t="Include">
             <e p="BaseTask.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="Minigames" t="Include">
               <e p="CauldronGame.cs" t="Include" />
               <e p="UI_Cupboard_Minigame.cs" t="Include" />
