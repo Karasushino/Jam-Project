@@ -1,9 +1,10 @@
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_EnchantmentTable_Minigame : MonoBehaviour
+public class UI_EnchantmentTable_Minigame : NetworkBehaviour
 {
 
     public GameObject[] runes;
@@ -34,6 +35,8 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.gameObject.SetActive(false);
+
         nRunes = runes.Length;
         UILimits.Top = 365.0f;
         UILimits.Right = 766f;
@@ -97,17 +100,17 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
         {
             if (bSelected[0] && bSelected[2] && bSelected[4])
             {
-                baseTask.SetTaskSuccess(true);
+                baseTask.CmdSetTaskSuccess(true);
                 baseTask.ReturnMovementToPlayerOnUI();
                 this.gameObject.SetActive(false);
-                baseTask.setCompleted(true);
+                baseTask.CmdSetCompleted(true);
             }
             else
             {
-                baseTask.SetTaskSuccess(false);
+                baseTask.CmdSetTaskSuccess(false);
                 baseTask.ReturnMovementToPlayerOnUI();
                 this.gameObject.SetActive(false);
-                baseTask.setCompleted(true);
+                baseTask.CmdSetCompleted(true);
             }
         }
     }
@@ -129,7 +132,7 @@ public class UI_EnchantmentTable_Minigame : MonoBehaviour
             bSelected[i] = false;
             indexResult = 0;
         }
-        baseTask.SetTaskSuccess(false);
+        baseTask.CmdSetTaskSuccess(false);
     }
     
 }

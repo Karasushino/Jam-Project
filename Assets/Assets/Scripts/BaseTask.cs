@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class BaseTask : NetworkBehaviour
 {
-    public string PlayerTag;
+    public string PlayerTag = "Playe";
 
     //Object for the task Graphic Representation
     public GameObject UITask;
@@ -108,22 +108,21 @@ public class BaseTask : NetworkBehaviour
     {
         return bCompleted;
     }
-
-    public void setCompleted(bool b)
+    [Command(ignoreAuthority = true)]
+    public void CmdSetCompleted(bool b)
     {
         bCompleted = b;
     }
-    
+
     //Set task result
-    public void SetTaskSuccess(bool b)
+    [Command(ignoreAuthority = true)]
+    public void CmdSetTaskSuccess(bool b)
     {
         bSuccess = b;
         
-        
-        
     }
     //Set The Task Description
-    public void SetTaskDescription(string s)
+    public void CmdSetTaskDescription(string s)
     {
         sDescription = s;
     }
@@ -134,7 +133,7 @@ public class BaseTask : NetworkBehaviour
     {
         return bIsActiveTask;
     }
-
+    [Command(ignoreAuthority = true)]
     public void setActiveTask(bool b)
     {
         bIsActiveTask = b;

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using Mirror.Examples.Pong;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UICauldronMinigame : MonoBehaviour
+public class UICauldronMinigame : NetworkBehaviour
 {
     //Get the minigame Object to set it inactive once its completed.
     public Slider temperatureBar;
@@ -47,6 +48,9 @@ public class UICauldronMinigame : MonoBehaviour
 
     void Start()
     {
+        this.gameObject.SetActive(false);
+
+
         CoolingRate = maxCoolingRate;
     }
 
@@ -124,9 +128,9 @@ public class UICauldronMinigame : MonoBehaviour
         
         buttonHeatUp.interactable = false;
         buttonIngredients.interactable = false;
-        BaseTask.SetTaskSuccess(CheckIfTemperatureIsCorrect());
+        BaseTask.CmdSetTaskSuccess(CheckIfTemperatureIsCorrect());
         BaseTask.ReturnMovementToPlayerOnUI();
-        BaseTask.setCompleted(true);
+        BaseTask.CmdSetCompleted(true);
         this.gameObject.SetActive(false);
         //CheckIfTemperatureIsCorrect()
     }

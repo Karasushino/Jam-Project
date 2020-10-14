@@ -1,9 +1,10 @@
 using System.Collections;
+using Mirror;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public class UITentacleMinigame : MonoBehaviour
+public class UITentacleMinigame : NetworkBehaviour
 {
     // Start is called before the first frame update
 
@@ -28,7 +29,7 @@ public class UITentacleMinigame : MonoBehaviour
     public bool bCorrectAnswere; 
     void Start()
     {
-
+        this.gameObject.SetActive(false);
         bHaveTool = false;
     }
 
@@ -86,7 +87,7 @@ public class UITentacleMinigame : MonoBehaviour
         bHaveTool = false;
         bCorrectAnswere = false;
         currentPorcentage = 1;
-        baseTask.SetTaskSuccess(bCorrectAnswere);
+        baseTask.CmdSetTaskSuccess(bCorrectAnswere);
     }
     
    public void FillFlask()
@@ -95,13 +96,13 @@ public class UITentacleMinigame : MonoBehaviour
         {
             //Add to current temperature
             currentPorcentage += porcToAddPerClick;
-            baseTask.setCompleted(true);
+            baseTask.CmdSetCompleted(true);
             //If we added more temperature than we should have set it back to max
             if (currentPorcentage >= objectivePorcentage)
             {
                currentPorcentage = objectivePorcentage;
               
-                baseTask.SetTaskSuccess(bCorrectAnswere);
+                baseTask.CmdSetTaskSuccess(bCorrectAnswere);
                 baseTask.ReturnMovementToPlayerOnUI();
                 this.gameObject.SetActive(false);
                 

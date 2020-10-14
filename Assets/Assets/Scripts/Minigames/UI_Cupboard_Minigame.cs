@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class UI_Cupboard_Minigame : MonoBehaviour
+public class UI_Cupboard_Minigame : NetworkBehaviour
 {
     /**Important Disclaimer*/
 
@@ -25,8 +26,9 @@ public class UI_Cupboard_Minigame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.gameObject.SetActive(false);
         //Changes number of objects to index suitable.
-       
+
         //Create a set array of bool.
         bObjectSelected = new bool[numberOfObjects];
         numberOfObjects -= 1;
@@ -52,18 +54,18 @@ public class UI_Cupboard_Minigame : MonoBehaviour
             if (i == IndexOfCorrectObject)
             {
                 bCorrectSlection = true;
-                cupboardTask.SetTaskSuccess(bCorrectSlection);
+                cupboardTask.CmdSetTaskSuccess(bCorrectSlection);
                 Debug.Log("Correct Selection");
                 cupboardTask.ReturnMovementToPlayerOnUI();
-                cupboardTask.setCompleted(true);
+                cupboardTask.CmdSetCompleted(true);
                 this.gameObject.SetActive(false);
             }
             else
             {
                 Debug.Log("Wrong Selection");
-                cupboardTask.SetTaskSuccess(bCorrectSlection);
+                cupboardTask.CmdSetTaskSuccess(bCorrectSlection);
                 cupboardTask.ReturnMovementToPlayerOnUI();
-                cupboardTask.setCompleted(true);
+                cupboardTask.CmdSetCompleted(true);
                 this.gameObject.SetActive(false);
                 
             }
@@ -80,7 +82,7 @@ public class UI_Cupboard_Minigame : MonoBehaviour
             bObjectSelected[i] = false;
 
         bAnySelection = false;
-        cupboardTask.SetTaskSuccess(false);
+        cupboardTask.CmdSetTaskSuccess(false);
         Debug.Log("Selection Unlocked, you can reselect now");
     }
 

@@ -4,8 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Mirror;
 
-public class UI_Potions_Minigame : MonoBehaviour
+public class UI_Potions_Minigame : NetworkBehaviour
 {
     public GameObject[] BasePotions;
 
@@ -25,6 +26,8 @@ public class UI_Potions_Minigame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.gameObject.SetActive(false);
+
         nMixBottles = BasePotions.Length;
         colorA = Color.black;
         colorB = Color.black;
@@ -94,9 +97,9 @@ public class UI_Potions_Minigame : MonoBehaviour
 
  public void FinishMinigame()
  {
-     potionsTask.SetTaskSuccess(bWin);
+     potionsTask.CmdSetTaskSuccess(bWin);
      this.gameObject.SetActive(false);
-     potionsTask.setCompleted(true);
+     potionsTask.CmdSetCompleted(true);
      potionsTask.ReturnMovementToPlayerOnUI();
  }
  
