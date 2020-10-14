@@ -5,8 +5,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BaseTask : MonoBehaviour
+public class BaseTask : NetworkBehaviour
 {
+    public string PlayerTag;
+
     //Object for the task Graphic Representation
     public GameObject UITask;
     //Flag true if the player is inside this object range
@@ -18,9 +20,12 @@ public class BaseTask : MonoBehaviour
     //String For This Task Name
     private String sTaskName;
     //Flag is this Task is active or sleeping
+    [SyncVar]
     public bool bIsActiveTask;
     //Task if succeed or failure in this task. 
+    [SyncVar]
     public bool bSuccess;
+    [SyncVar]
     public bool bCompleted;
    // public TaskLog taskLog; 
     
@@ -61,7 +66,7 @@ public class BaseTask : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         //If the player Enters In the trigger of this object. 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag(PlayerTag))
         {
             //Flag Player Entrance
             bPlayerIn = true;
@@ -77,7 +82,7 @@ public class BaseTask : MonoBehaviour
     public void OnTriggerExit2D(Collider2D other)
     {
         //When the player leaves the trigger
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag(PlayerTag))
         {
             //... set flag to false
             bPlayerIn = false;

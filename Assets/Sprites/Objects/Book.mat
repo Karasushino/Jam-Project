@@ -38,6 +38,6 @@ Material:
     m_Floats: []
     m_Colors:
     - Color_c8b220c099164f0080cfe89e77a222f4: {r: 5.5908804, g: 4.156571, b: 0.087814875, a: 1}
-    - _Color: {r: 20.404053, g: 19.549435, b: 0, a: 1}
+    - _Color: {r: 26.324524, g: 25.221928, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

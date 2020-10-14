@@ -804,12 +804,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  PlayerTag: Player2
   UITask: {fileID: 1997774849}
   Player: {fileID: 0}
   sDescription: Heat the couldron to eighty degrees and introduce all ingredients.
   bIsActiveTask: 0
   bSuccess: 0
   bCompleted: 0
+--- !u!114 &399798236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399798229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 862247812
+  serverOnly: 0
+  m_AssetId: 800d489b39715854b84b8887d4876bf6
+  hasSpawned: 0
 --- !u!1 &400958252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,6 +3868,10 @@ PrefabInstance:
       propertyPath: bIsActiveTask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1710651931652189558, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
+      propertyPath: PlayerTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1710651931652189560, guid: e2c67388237eb304499bbdb18074f4d5, type: 3}
       propertyPath: m_Color.r
       value: 0.03391552
@@ -5636,6 +5659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1873080369}
     m_Modifications:
+    - target: {fileID: -6779743596547127207, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: sceneId
+      value: 1563306851
+      objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: UITask
       value: 
@@ -5643,6 +5670,10 @@ PrefabInstance:
     - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: sDescription
       value: Pick the [INSERTNAME] ingredient
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: PlayerTag
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621316, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: m_Offset.x
@@ -6161,75 +6192,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271867633}
   m_CullTransparentMesh: 1
---- !u!1001 &1284332298
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198977122763908690, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4196619876889841785, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: sceneId
-      value: 3657907844
-      objectReference: {fileID: 0}
-    - target: {fileID: 4196619876889841785, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_AssetId
-      value: 2094b76c4fe458045b0dac56c329b606
-      objectReference: {fileID: 0}
-    - target: {fileID: 8455848198037499089, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_Name
-      value: Player 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8455848198037499089, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
 --- !u!1001 &1288932263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8393,6 +8355,27 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3404988632198200466, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
   m_PrefabInstance: {fileID: 1533307324}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1707189027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3319503803654321408, guid: dd2087baa71e5bf44a5b76d6201c3a28, type: 3}
+  m_PrefabInstance: {fileID: 3319503803731996658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1707189034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707189027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3580606809
+  serverOnly: 0
+  m_AssetId: dd2087baa71e5bf44a5b76d6201c3a28
+  hasSpawned: 0
 --- !u!1 &1719925237
 GameObject:
   m_ObjectHideFlags: 0
@@ -9713,6 +9696,10 @@ PrefabInstance:
       propertyPath: m_PointLightOuterRadius
       value: 1.75
       objectReference: {fileID: 0}
+    - target: {fileID: 1773826808639483339, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: sceneId
+      value: 63627397
+      objectReference: {fileID: 0}
     - target: {fileID: 2666170202129873717, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1
@@ -9784,6 +9771,10 @@ PrefabInstance:
     - target: {fileID: 2666170202129873722, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: sDescription
       value: Select Rune A, C and E
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666170202129873722, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: PlayerTag
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3656174620413612628, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
@@ -10000,6 +9991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  PlayerTag: Player
   UITask: {fileID: 950295839}
   Player: {fileID: 0}
   sDescription: Heat the couldron to 80 degrees and introduce all ingredients.
@@ -10285,7 +10279,7 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 8455848198037499089, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+  playerPrefab: {fileID: 3623179386806071303, guid: cfa6c350ff648cc4c8523b9fb126f363, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
@@ -10652,12 +10646,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  PlayerTag: Player2
   UITask: {fileID: 1706691154}
   Player: {fileID: 0}
   sDescription: 
   bIsActiveTask: 1
   bSuccess: 0
   bCompleted: 0
+--- !u!114 &2060996659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060996654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 951255916
+  serverOnly: 0
+  m_AssetId: 2108da0bd61b440478c8cbd0f62101d2
+  hasSpawned: 0
 --- !u!1 &2071163009
 GameObject:
   m_ObjectHideFlags: 0
@@ -11236,6 +11249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862421501}
     m_Modifications:
+    - target: {fileID: -3790192114693918621, guid: dd2087baa71e5bf44a5b76d6201c3a28, type: 3}
+      propertyPath: sceneId
+      value: 2165591056
+      objectReference: {fileID: 0}
     - target: {fileID: 3319503803654321408, guid: dd2087baa71e5bf44a5b76d6201c3a28, type: 3}
       propertyPath: m_Name
       value: BOOK1
@@ -12004,6 +12021,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2108da0bd61b440478c8cbd0f62101d2, type: 3}
+--- !u!1001 &7607528627003602679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7607528625923724468, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_Name
+      value: Player 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724473, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724474, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: sceneId
+      value: 3657907844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607528625923724474, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
+      propertyPath: m_AssetId
+      value: 2094b76c4fe458045b0dac56c329b606
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2094b76c4fe458045b0dac56c329b606, type: 3}
 --- !u!224 &8155985927812270011 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9183662647324839193, guid: 4198d842838f03e428bd71012bdc9e31, type: 3}
@@ -12016,6 +12098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1873080369}
     m_Modifications:
+    - target: {fileID: 6210866486450428666, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
+      propertyPath: sceneId
+      value: 3467085386
+      objectReference: {fileID: 0}
     - target: {fileID: 7372624485833138135, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
       propertyPath: m_Name
       value: Left Cauldron Task
@@ -12074,6 +12160,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1309461166}
     m_Modifications:
+    - target: {fileID: 7882109891377738277, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: sceneId
+      value: 966255376
+      objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630176, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_Name
       value: Right Octopus Task
@@ -12085,6 +12175,10 @@ PrefabInstance:
     - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: sDescription
       value: Get the third tool and tickle that tentacle until it spills enough ink
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: PlayerTag
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630188, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12272,5 +12366,13 @@ PrefabInstance:
       propertyPath: UITask
       value: 
       objectReference: {fileID: 1218409459}
+    - target: {fileID: 6254538112881568850, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: PlayerTag
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425406895454405158, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: sceneId
+      value: 1046397976
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
