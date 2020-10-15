@@ -1,0 +1,474 @@
+fileFormatVersion: 2
+guid: 3960839376e4ff746a47376e92cdb9d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2506567951179383215
+    second: cupboard_concept_0
+  - first:
+      213: -5569899545897867314
+    second: cupboard_concept_1
+  - first:
+      213: 8116969761971597261
+    second: cupboard_concept_2
+  - first:
+      213: 8663643812631377613
+    second: cupboard_concept_3
+  - first:
+      213: 2071977918082774176
+    second: cupboard_concept_4
+  - first:
+      213: -3316468491511806834
+    second: cupboard_concept_5
+  - first:
+      213: -6229011995016377615
+    second: cupboard_concept_6
+  - first:
+      213: -5904428169428572989
+    second: cupboard_concept_7
+  - first:
+      213: -98402804572983511
+    second: cupboard_concept_8
+  - first:
+      213: -6490900936953230432
+    second: cupboard_concept_9
+  - first:
+      213: 3944053785954912656
+    second: cupboard_concept_10
+  - first:
+      213: -832595047045525077
+    second: cupboard_concept_11
+  - first:
+      213: 2040673197935627679
+    second: cupboard_concept_12
+  - first:
+      213: -747890373514714731
+    second: cupboard_concept_13
+  - first:
+      213: -7206059644696937776
+    second: cupboard_concept_14
+  - first:
+      213: 6519294876985413014
+    second: cupboard_concept_15
+  - first:
+      213: 6101687384545001849
+    second: cupboard_concept_16
+  - first:
+      213: 6121443275589043718
+    second: cupboard_concept_17
+  - first:
+      213: 4121215592106673536
+    second: cupboard_concept_18
+  - first:
+      213: 3124620339595643025
+    second: cupboard_concept_19
+  - first:
+      213: -4315116222097058776
+    second: cupboard_concept_20
+  - first:
+      213: 3039153736780987530
+    second: cupboard_concept_21
+  - first:
+      213: -5476307462128619116
+    second: cupboard_concept_22
+  - first:
+      213: -7885427077145485777
+    second: cupboard_concept_23
+  - first:
+      213: 1031136712512548299
+    second: cupboard_concept_24
+  - first:
+      213: -3956895632725332219
+    second: cupboard_concept_25
+  - first:
+      213: -7685926573039028831
+    second: cupboard_concept_26
+  - first:
+      213: 8195528203586593512
+    second: cupboard_concept_27
+  - first:
+      213: -3650011984786225772
+    second: cupboard_concept_28
+  - first:
+      213: -2054124127822409705
+    second: cupboard_concept_29
+  - first:
+      213: 2507816350347887361
+    second: cupboard_concept_30
+  - first:
+      213: 6712139288350776514
+    second: cupboard_concept_31
+  - first:
+      213: 9081440022194527514
+    second: cupboard_concept_32
+  - first:
+      213: 3406363475163671269
+    second: cupboard_concept_33
+  - first:
+      213: -7774121941394044331
+    second: cupboard_concept_34
+  - first:
+      213: -3334971630985203695
+    second: cupboard_concept_35
+  - first:
+      213: -1328567068987457231
+    second: cupboard_concept_36
+  - first:
+      213: -8876331885202870859
+    second: cupboard_concept_37
+  - first:
+      213: -7091919227246897874
+    second: cupboard_concept_38
+  - first:
+      213: -5741523584500476273
+    second: cupboard_concept_39
+  - first:
+      213: 6011240101197953527
+    second: cupboard_concept_40
+  - first:
+      213: 4337570661525421864
+    second: cupboard_concept_41
+  - first:
+      213: 8860011479405206403
+    second: cupboard_concept_42
+  - first:
+      213: -4933019325200092266
+    second: cupboard_concept_43
+  - first:
+      213: -2590960300005013276
+    second: cupboard_concept_44
+  - first:
+      213: 5144996782214475928
+    second: cupboard_concept_45
+  - first:
+      213: 6290543417063910960
+    second: cupboard_concept_46
+  - first:
+      213: 7888929090658343408
+    second: cupboard_concept_47
+  - first:
+      213: 8509248630741163245
+    second: cupboard_concept_48
+  - first:
+      213: -5437888526563583424
+    second: cupboard_concept_49
+  - first:
+      213: 492091685824938911
+    second: cupboard_concept_50
+  - first:
+      213: 3144635781412290282
+    second: cupboard_concept_51
+  - first:
+      213: 1481262112236448673
+    second: cupboard_concept_52
+  - first:
+      213: 8777052299556271945
+    second: cupboard_concept_53
+  - first:
+      213: -5972837643664833905
+    second: cupboard_concept_54
+  - first:
+      213: 1088993207508593640
+    second: cupboard_concept_55
+  - first:
+      213: -9081619904654214699
+    second: cupboard_concept_56
+  - first:
+      213: -609753359456562788
+    second: cupboard_concept_57
+  - first:
+      213: 4613931253735035762
+    second: cupboard_concept_58
+  - first:
+      213: 2948916961171223724
+    second: cupboard_concept_59
+  - first:
+      213: 7749550495685257915
+    second: cupboard_concept_60
+  - first:
+      213: 8776741282684529688
+    second: cupboard_concept_61
+  - first:
+      213: 6995671313975340348
+    second: cupboard_concept_62
+  - first:
+      213: 1309757851739943915
+    second: cupboard_concept_63
+  - first:
+      213: -8804929445357000998
+    second: cupboard_concept_64
+  - first:
+      213: -1034985989496209216
+    second: cupboard_concept_65
+  - first:
+      213: 5144639812148968146
+    second: cupboard_concept_66
+  - first:
+      213: 7719891322899294947
+    second: cupboard_concept_67
+  - first:
+      213: -7158577235353617469
+    second: cupboard_concept_68
+  - first:
+      213: -8372412022318714516
+    second: cupboard_concept_69
+  - first:
+      213: 637939658513824548
+    second: cupboard_concept_70
+  - first:
+      213: -5205856320902751792
+    second: cupboard_concept_71
+  - first:
+      213: 279178113190369450
+    second: cupboard_concept_72
+  - first:
+      213: 6610784529953125888
+    second: cupboard_concept_73
+  - first:
+      213: -7724790044001271215
+    second: cupboard_concept_74
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cupboard_concept_0
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 181
+        width: 1604
+        height: 1975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ef2909ab1e63dd0800000000000000
+      internalID: -2506567951179383215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cupboard_concept_1
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 1885
+        width: 257
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7e524afddb3b2b0800000000000000
+      internalID: -5569899545897867314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cupboard_concept_9
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 1243
+        width: 380
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab07a4fcffabe5a0800000000000000
+      internalID: -6490900936953230432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cupboard_concept_11
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 805
+        width: 317
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba11a1b47370274f0800000000000000
+      internalID: -832595047045525077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cupboard_concept_12
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 418
+        width: 266
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d0d99267de15c10800000000000000
+      internalID: 2040673197935627679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
