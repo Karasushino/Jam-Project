@@ -287,6 +287,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &32700593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2666170202492219620, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+  m_PrefabInstance: {fileID: 1917624876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &32700595
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32700593}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000250529, y: 0.10158953}
+  m_Size: {x: 0.5320899, y: 0.39571437}
+  m_Direction: 1
 --- !u!1 &85961557
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +905,7 @@ MonoBehaviour:
   DesiredPlayerTag: Player2
   UITask: {fileID: 1997774849}
   Player: {fileID: 0}
-  sDescription: Heat the couldron to eighty degrees and introduce all ingredients.
+  sDescription: Heat the couldron to 76 degrees and add all ingredients.
   bIsActiveTask: 0
   bSuccess: 0
   bCompleted: 0
@@ -952,7 +973,7 @@ Transform:
   - {fileID: 692275151}
   - {fileID: 1671872997}
   m_Father: {fileID: 1157017128}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406369877
 GameObject:
@@ -3468,6 +3489,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &443626775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5590040788703759191, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+  m_PrefabInstance: {fileID: 8901439447887810706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &443626780
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443626775}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04840851, y: -0.3424999}
+  m_Size: {x: 1.9793128, y: 3.2829902}
+  m_Direction: 0
 --- !u!4 &468753131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2666170202129873717, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
@@ -3530,7 +3572,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -100
-  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38ea4b7c32d28b44c9381fc8c6bcbb51, type: 3}
   m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3550,7 +3592,7 @@ Transform:
   m_GameObject: {fileID: 471668059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.013, y: 0.0082, z: 0}
-  m_LocalScale: {x: 20.46993, y: 11.2024, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -4030,7 +4072,7 @@ MonoBehaviour:
   m_text: 'Step 3:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -6592009240868495316, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4522,7 +4564,7 @@ Transform:
   - {fileID: 1736951413}
   - {fileID: 1025899150}
   m_Father: {fileID: 1157017128}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &908085178 stripped
 RectTransform:
@@ -4571,14 +4613,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949191893}
   m_LocalRotation: {x: -0, y: -0.017888684, z: -0, w: 0.99984}
-  m_LocalPosition: {x: 6.4406137, y: -2.1276488, z: 7.2495074}
+  m_LocalPosition: {x: -1.33, y: -1.23, z: 6.96}
   m_LocalScale: {x: 1.6000003, y: 1.6, z: 1.7789001}
   m_Children:
   - {fileID: 406369878}
   - {fileID: 1912445249}
   - {fileID: 1012717770}
   m_Father: {fileID: 1157017128}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &950295839 stripped
 GameObject:
@@ -5534,13 +5576,21 @@ PrefabInstance:
       propertyPath: sceneId
       value: 1563306851
       objectReference: {fileID: 0}
+    - target: {fileID: 4258893796045881561, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.027149588
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258893796045881561, guid: 1f312685da7086049b69d53238e4be01, type: 3}
+      propertyPath: m_Size.x
+      value: 0.36429918
+      objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: UITask
       value: 
       objectReference: {fileID: 488870739}
     - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: sDescription
-      value: Pick the [INSERTNAME] ingredient
+      value: Pick the Top Left ingredient
       objectReference: {fileID: 0}
     - target: {fileID: 4258893796416621314, guid: 1f312685da7086049b69d53238e4be01, type: 3}
       propertyPath: PlayerTag
@@ -5767,6 +5817,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1312684931}
+  - {fileID: 1374591378}
   - {fileID: 400958254}
   - {fileID: 1665241513}
   - {fileID: 1308372253}
@@ -6099,7 +6150,27 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
     - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_text
+      value: Add Ingredients
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6592009240868495316, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_fontSize
+      value: 48.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4432010296994878522, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6165,6 +6236,18 @@ PrefabInstance:
       propertyPath: buttonHeatUp
       value: 
       objectReference: {fileID: 2108050880}
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: temperatureNeeded
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: CoolingRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: currentTemperature
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 6311037165328917439, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -395
@@ -6431,7 +6514,7 @@ Transform:
   - {fileID: 1927170248}
   - {fileID: 2071163011}
   m_Father: {fileID: 1157017128}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1309461165
 GameObject:
@@ -6784,6 +6867,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1365521142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1157017128}
+    m_Modifications:
+    - target: {fileID: 8792146420043591804, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_Name
+      value: Candle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.2876492
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.017888684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99984
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+--- !u!4 &1374591378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
+  m_PrefabInstance: {fileID: 1365521142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510899503
 GameObject:
   m_ObjectHideFlags: 0
@@ -7665,6 +7810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIPotionsMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 3404988632198200469, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4766322171323820946, guid: 5b964ee9568a92b4597700174fa5c1a2, type: 3}
       propertyPath: potionsTask
       value: 
@@ -8031,7 +8180,7 @@ Transform:
   - {fileID: 1349543419}
   - {fileID: 214404878}
   m_Father: {fileID: 1157017128}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1671872995
 GameObject:
@@ -8189,7 +8338,7 @@ Camera:
   far clip plane: 100
   field of view: 66.2
   orthographic: 1
-  orthographic size: 7.37
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8213,7 +8362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 0.42, z: -1}
+  m_LocalPosition: {x: 0, y: 0.42, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8599,7 +8748,7 @@ MonoBehaviour:
   m_text: 'Step 1:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -6592009240868495316, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8950,7 +9099,7 @@ MonoBehaviour:
   m_text: 'Step 2:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -6592009240868495316, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9172,6 +9321,10 @@ PrefabInstance:
     - target: {fileID: 1102307291579700082, guid: 5f99d946a50495f44807412b7893b6f9, type: 3}
       propertyPath: m_Name
       value: UIEnchantmentTable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102307291579700082, guid: 5f99d946a50495f44807412b7893b6f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1102307291579700085, guid: 5f99d946a50495f44807412b7893b6f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9460,7 +9613,7 @@ PrefabInstance:
       objectReference: {fileID: 677128293}
     - target: {fileID: 2666170202129873722, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: sDescription
-      value: Select Rune A, C and E
+      value: 'Select Runes: Red, Green and Purple'
       objectReference: {fileID: 0}
     - target: {fileID: 2666170202129873722, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: PlayerTag
@@ -9494,11 +9647,29 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.015
       objectReference: {fileID: 0}
+    - target: {fileID: 3656174620968404802, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656174620968404802, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656174620968404802, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656174621479226023, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3789028478246876240, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
       propertyPath: m_Name
       value: Point Light 2D Ball
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3656174621479226023, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
+    - {fileID: 2666170202492219622, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9b2d60be1e74be74cbaa68b082f5a4f2, type: 3}
 --- !u!1 &1927170247
 GameObject:
@@ -9690,7 +9861,7 @@ MonoBehaviour:
   DesiredPlayerTag: Player
   UITask: {fileID: 950295839}
   Player: {fileID: 0}
-  sDescription: Heat the couldron to 80 degrees and introduce all ingredients.
+  sDescription: Heat the couldron to 94 degrees and add all ingredients.
   bIsActiveTask: 0
   bSuccess: 0
   bCompleted: 0
@@ -9927,7 +10098,23 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
     - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_text
+      value: Add Ingredients
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6592009240868495316, guid: e2cd38a2f2b88ac4bb60d509ce87aaa2, type: 2}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894817549762586200, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: m_fontSize
+      value: 48.4
       objectReference: {fileID: 0}
     - target: {fileID: 4432010296994878522, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -9993,6 +10180,14 @@ PrefabInstance:
       propertyPath: buttonHeatUp
       value: 
       objectReference: {fileID: 584603133}
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: temperatureNeeded
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108076796291452077, guid: 15b642eba0787db48912841baa243076, type: 3}
+      propertyPath: currentTemperature
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 6311037165328917439, guid: 15b642eba0787db48912841baa243076, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -395
@@ -10310,7 +10505,7 @@ MonoBehaviour:
   DesiredPlayerTag: Player2
   UITask: {fileID: 1706691154}
   Player: {fileID: 0}
-  sDescription: Mix two substances to get a purple flask.
+  sDescription: Mix two potions to get a purple flask
   bIsActiveTask: 1
   bSuccess: 0
   bCompleted: 0
@@ -10663,6 +10858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICupboard Minigame
       objectReference: {fileID: 0}
+    - target: {fileID: 2734761174779718042, guid: 56682cfe83af24445b40ba60c88c50d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709310121870035592, guid: 56682cfe83af24445b40ba60c88c50d3, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -10682,7 +10881,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6254538112881568850, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
   m_PrefabInstance: {fileID: 8901439447887810706}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 443626775}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c54d359ef01db9e4a9a0ca15a5254e17, type: 3}
@@ -11197,6 +11396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1309461166}
     m_Modifications:
+    - target: {fileID: 3579140376794721798, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
+      propertyPath: m_Radius
+      value: 0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 3579140377820167828, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
       propertyPath: m_Name
       value: Right Cauldron Task
@@ -11207,7 +11410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579140377820167832, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.459165
+      value: -0.351
       objectReference: {fileID: 0}
     - target: {fileID: 3579140377820167832, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11244,6 +11447,22 @@ PrefabInstance:
     - target: {fileID: 3579140377820167832, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579140377820167834, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579140377820167834, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
+      propertyPath: m_Radius
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579140377820167834, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579140378065073480, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.264
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800d489b39715854b84b8887d4876bf6, type: 3}
@@ -11590,6 +11809,10 @@ PrefabInstance:
       propertyPath: sceneId
       value: 3467085386
       objectReference: {fileID: 0}
+    - target: {fileID: 7372624485532783627, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.255
+      objectReference: {fileID: 0}
     - target: {fileID: 7372624485833138135, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
       propertyPath: m_Name
       value: Left Cauldron Task
@@ -11638,6 +11861,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8209400446758574749, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209400446758574749, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
+      propertyPath: m_Radius
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209400448154393078, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
+      propertyPath: m_Radius
+      value: 0.48
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8209400446758574751, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 232fe67e92647d347a52d6c631eed129, type: 3}
@@ -11652,6 +11887,14 @@ PrefabInstance:
       propertyPath: sceneId
       value: 966255376
       objectReference: {fileID: 0}
+    - target: {fileID: 8015540269274754364, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015540269274754364, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.004
+      objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630176, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_Name
       value: Right Octopus Task
@@ -11662,7 +11905,7 @@ PrefabInstance:
       objectReference: {fileID: 950809991}
     - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: sDescription
-      value: Get the third tool and tickle that tentacle until it spills enough ink
+      value: Get the third tool and tickle the octopus until it fills the container
       objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630179, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: PlayerTag
@@ -11674,11 +11917,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630188, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.165048
+      value: 10.04
       objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630188, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.3008351
+      value: -4.61
       objectReference: {fileID: 0}
     - target: {fileID: 8015540269629630188, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11716,6 +11959,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683397160895499159, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: m_Radius
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683397161237181547, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
+      propertyPath: m_Radius
+      value: 0.58
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2afd396d2cbe944459ae84be4ef9968e, type: 3}
 --- !u!1001 &8792146421283703805
@@ -11731,7 +11982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.189386
+      value: -9.91
       objectReference: {fileID: 0}
     - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11739,7 +11990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.6195073
+      value: 6.66
       objectReference: {fileID: 0}
     - target: {fileID: 8792146420043591806, guid: 98b2db296e2f93f4cb3b9f35793abe13, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11782,13 +12033,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1309461166}
     m_Modifications:
+    - target: {fileID: 1439258018492865876, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: m_Radius
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439258018492865876, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5590040788703759184, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.95
+      value: 10.17
       objectReference: {fileID: 0}
     - target: {fileID: 5590040788703759184, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.32
+      value: 3.81
       objectReference: {fileID: 0}
     - target: {fileID: 5590040788703759184, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11869,6 +12128,22 @@ PrefabInstance:
     - target: {fileID: 6254538112881568850, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
       propertyPath: DesiredPlayerTag
       value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306200390250550541, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.052665707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306200390250550541, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.7980467
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306200390250550541, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0024403224
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306200390250550541, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3172804
       objectReference: {fileID: 0}
     - target: {fileID: 6425406895454405158, guid: a14b03e7e50df5249a20b098836fb7b2, type: 3}
       propertyPath: sceneId

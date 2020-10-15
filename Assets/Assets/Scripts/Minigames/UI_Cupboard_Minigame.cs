@@ -33,7 +33,7 @@ public class UI_Cupboard_Minigame : NetworkBehaviour
         bObjectSelected = new bool[numberOfObjects];
         numberOfObjects -= 1;
         //Pick a random correct Object.
-        IndexOfCorrectObject = 2;
+        
     }
     
 
